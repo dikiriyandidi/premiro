@@ -1,0 +1,8 @@
+node_modules/
+*.log
+.env
+uploads/*
+temp/*
+config/config.json
+logs/*
+apps/v1/config/local

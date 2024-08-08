@@ -1,0 +1,1132 @@
+{
+  "master_event": [{
+    "id": 1, 
+    "title": "Bersenang-senang Di DWP 2017",
+    "start_date": "23 Juni 2017",
+    "end_date": "25 Juni 2017",
+    "start_time": "10:00",
+    "end_time": "17:00", 
+    "status": "Publish"
+  }, {
+    "id": 2, 
+    "title": "Tunjukkan Passion Musikmu di Soundrenaline",
+    "start_date": "23 Juni 2017",
+    "end_date": "23 Juni 2017",
+    "start_time": "10:00",
+    "end_time": "17:00", 
+    "status": "Publish"
+  }, {
+    "id": 3, 
+    "title": "Event Lain Buat Kamu",
+    "start_date": "23 Juni 2017",
+    "end_date": "25 Juni 2017",
+    "start_time": "10:00",
+    "end_time": "17:00", 
+    "status": "Publish"
+  }, {
+    "id": 4, 
+    "title": "Event Bukber Rame-rame",
+    "start_date": "23 Juni 2017",
+    "end_date": "23 Juni 2017",
+    "start_time": "10:00",
+    "end_time": "17:00", 
+    "status": "Publish"
+  }, {
+    "id": 5, 
+    "title": "Bersenang-senang Di DWP 2017",
+    "start_date": "23 Juni 2017",
+    "end_date": "25 Juni 2017",
+    "start_time": "10:00",
+    "end_time": "17:00", 
+    "status": "Publish"
+  }, {
+    "id": 6, 
+    "title": "Tunjukkan Passion Musikmu di Soundrenaline",
+    "start_date": "23 Juni 2017",
+    "end_date": "23 Juni 2017",
+    "start_time": "10:00",
+    "end_time": "17:00", 
+    "status": "Publish"
+  }, {
+    "id": 7, 
+    "title": "Event Lain Buat Kamu",
+    "start_date": "23 Juni 2017",
+    "end_date": "25 Juni 2017",
+    "start_time": "10:00",
+    "end_time": "17:00", 
+    "status": "Publish"
+  }, {
+    "id": 8, 
+    "title": "Event Bukber Rame-rame",
+    "start_date": "23 Juni 2017",
+    "end_date": "23 Juni 2017",
+    "start_time": "10:00",
+    "end_time": "17:00", 
+    "status": "Publish"
+  }, {
+    "id": 9, 
+    "title": "Bersenang-senang Di DWP 2017",
+    "start_date": "23 Juni 2017",
+    "end_date": "25 Juni 2017",
+    "start_time": "10:00",
+    "end_time": "17:00", 
+    "status": "Publish"
+  }, {
+    "id": 10, 
+    "title": "Tunjukkan Passion Musikmu di Soundrenaline",
+    "start_date": "23 Juni 2017",
+    "end_date": "23 Juni 2017",
+    "start_time": "10:00",
+    "end_time": "17:00", 
+    "status": "Publish"
+  }, {
+    "id": 11, 
+    "title": "Event Lain Buat Kamu",
+    "start_date": "23 Juni 2017",
+    "end_date": "25 Juni 2017",
+    "start_time": "10:00",
+    "end_time": "17:00", 
+    "status": "Publish"
+  }, {
+    "id": 12, 
+    "title": "Event Bukber Rame-rame",
+    "start_date": "23 Juni 2017",
+    "end_date": "23 Juni 2017",
+    "start_time": "10:00",
+    "end_time": "17:00", 
+    "status": "Publish"
+  }, {
+    "id": 13, 
+    "title": "Bersenang-senang Di DWP 2017",
+    "start_date": "23 Juni 2017",
+    "end_date": "25 Juni 2017",
+    "start_time": "10:00",
+    "end_time": "17:00", 
+    "status": "Publish"
+  }, {
+    "id": 14, 
+    "title": "Tunjukkan Passion Musikmu di Soundrenaline",
+    "start_date": "23 Juni 2017",
+    "end_date": "23 Juni 2017",
+    "start_time": "10:00",
+    "end_time": "17:00", 
+    "status": "Publish"
+  }, {
+    "id": 15, 
+    "title": "Event Lain Buat Kamu",
+    "start_date": "23 Juni 2017",
+    "end_date": "25 Juni 2017",
+    "start_time": "10:00",
+    "end_time": "17:00", 
+    "status": "Publish"
+  }, {
+    "id": 16, 
+    "title": "Event Bukber Rame-rame",
+    "start_date": "23 Juni 2017",
+    "end_date": "23 Juni 2017",
+    "start_time": "10:00",
+    "end_time": "17:00", 
+    "status": "Publish"
+  }, {
+    "id": 17, 
+    "title": "Bersenang-senang Di DWP 2017",
+    "start_date": "23 Juni 2017",
+    "end_date": "25 Juni 2017",
+    "start_time": "10:00",
+    "end_time": "17:00", 
+    "status": "Publish"
+  }, {
+    "id": 18, 
+    "title": "Tunjukkan Passion Musikmu di Soundrenaline",
+    "start_date": "23 Juni 2017",
+    "end_date": "23 Juni 2017",
+    "start_time": "10:00",
+    "end_time": "17:00", 
+    "status": "Publish"
+  }, {
+    "id": 19, 
+    "title": "Event Lain Buat Kamu",
+    "start_date": "23 Juni 2017",
+    "end_date": "25 Juni 2017",
+    "start_time": "10:00",
+    "end_time": "17:00", 
+    "status": "Publish"
+  }, {
+    "id": 20, 
+    "title": "Event Bukber Rame-rame",
+    "start_date": "23 Juni 2017",
+    "end_date": "23 Juni 2017",
+    "start_time": "10:00",
+    "end_time": "17:00", 
+    "status": "Publish"
+  }, {
+    "id": 21, 
+    "title": "Bersenang-senang Di DWP 2017",
+    "start_date": "23 Juni 2017",
+    "end_date": "25 Juni 2017",
+    "start_time": "10:00",
+    "end_time": "17:00", 
+    "status": "Publish"
+  }, {
+    "id": 22, 
+    "title": "Tunjukkan Passion Musikmu di Soundrenaline",
+    "start_date": "23 Juni 2017",
+    "end_date": "23 Juni 2017",
+    "start_time": "10:00",
+    "end_time": "17:00", 
+    "status": "Publish"
+  }, {
+    "id": 23, 
+    "title": "Event Lain Buat Kamu",
+    "start_date": "23 Juni 2017",
+    "end_date": "25 Juni 2017",
+    "start_time": "10:00",
+    "end_time": "17:00", 
+    "status": "Publish"
+  }, {
+    "id": 24, 
+    "title": "Event Bukber Rame-rame",
+    "start_date": "23 Juni 2017",
+    "end_date": "23 Juni 2017",
+    "start_time": "10:00",
+    "end_time": "17:00", 
+    "status": "Publish"
+  }], 
+  "master_city": [{
+    "id": 1, 
+    "city": "Jakarta Pusat",
+    "province": "DKI Jakarta",
+    "amo_city": "Jakarta Utara & Jakarta Pusat",
+    "amo_region": "DKI Jakarta",
+    "amo_zone": "Jakarta", 
+    "wknd_city": "Jakarta", 
+    "status": "Publish"
+  }, {
+    "id": 2, 
+    "city": "Jakarta Selatan",
+    "province": "DKI Jakarta",
+    "amo_city": "Jakarta Selatan & Jakarta Pusat",
+    "amo_region": "DKI Jakarta",
+    "amo_zone": "Jakarta", 
+    "wknd_city": "Jakarta", 
+    "status": "Publish"
+  }, {
+    "id": 3, 
+    "city": "Jakarta Barat",
+    "province": "DKI Jakarta",
+    "amo_city": "Jakarta Barat & Jakarta Pusat",
+    "amo_region": "DKI Jakarta",
+    "amo_zone": "Jakarta", 
+    "wknd_city": "Jakarta", 
+    "status": "Unpublish"
+  }, {
+    "id": 4, 
+    "city": "Tangerang Selatan",
+    "province": "Banten",
+    "amo_city": "Tangerang",
+    "amo_region": "Banten",
+    "amo_zone": "Tangerang", 
+    "wknd_city": "Jakarta", 
+    "status": "Unpublish"
+  }, {
+    "id": 5, 
+    "city": "Surabaya",
+    "province": "Jawa Timur",
+    "amo_city": "Surabaya",
+    "amo_region": "Jawa Timur",
+    "amo_zone": "Surabaya", 
+    "wknd_city": "Surabaya", 
+    "status": "Publish"
+  }, {
+    "id": 6, 
+    "city": "Malang",
+    "province": "Jawa Timur",
+    "amo_city": "Malang & Batu",
+    "amo_region": "Jawa Timur",
+    "amo_zone": "Malang", 
+    "wknd_city": "Surabaya", 
+    "status": "Publish"
+  }, 
+  {
+    "id": 7, 
+    "city": "Jakarta Pusat",
+    "province": "DKI Jakarta",
+    "amo_city": "Jakarta Utara & Jakarta Pusat",
+    "amo_region": "DKI Jakarta",
+    "amo_zone": "Jakarta", 
+    "wknd_city": "Jakarta", 
+    "status": "Publish"
+  }, {
+    "id": 8, 
+    "city": "Jakarta Selatan",
+    "province": "DKI Jakarta",
+    "amo_city": "Jakarta Selatan & Jakarta Pusat",
+    "amo_region": "DKI Jakarta",
+    "amo_zone": "Jakarta", 
+    "wknd_city": "Jakarta", 
+    "status": "Publish"
+  }, {
+    "id": 9, 
+    "city": "Jakarta Selatan",
+    "province": "DKI Jakarta",
+    "amo_city": "Jakarta Selatan & Jakarta Pusat",
+    "amo_region": "DKI Jakarta",
+    "amo_zone": "Jakarta", 
+    "wknd_city": "Jakarta", 
+    "status": "Publish"
+  }, {
+    "id": 10, 
+    "city": "Tangerang Selatan",
+    "province": "Banten",
+    "amo_city": "Tangerang",
+    "amo_region": "Banten",
+    "amo_zone": "Tangerang", 
+    "wknd_city": "Jakarta", 
+    "status": "Unpublish"
+  }, {
+    "id": 11, 
+    "city": "Surabaya",
+    "province": "Jawa Timur",
+    "amo_city": "Surabaya",
+    "amo_region": "Jawa Timur",
+    "amo_zone": "Surabaya", 
+    "wknd_city": "Surabaya", 
+    "status": "Publish"
+  }, {
+    "id": 12, 
+    "city": "Malang",
+    "province": "Jawa Timur",
+    "amo_city": "Malang & Batu",
+    "amo_region": "Jawa Timur",
+    "amo_zone": "Malang", 
+    "wknd_city": "Surabaya", 
+    "status": "Publish"
+  }], 
+  "article_event": [{
+    "id": 1, 
+    "title": "Bersenang-senang Di DWP 2017",
+    "start_date": "23 Juni 2017",
+    "end_date": "25 Juni 2017",
+    "start_time": "10:00",
+    "end_time": "17:00", 
+    "status": "Publish"
+  }, {
+    "id": 2, 
+    "title": "Tunjukkan Passion Musikmu di Soundrenaline",
+    "start_date": "23 Juni 2017",
+    "end_date": "23 Juni 2017",
+    "start_time": "10:00",
+    "end_time": "17:00", 
+    "status": "Publish"
+  }, {
+    "id": 3, 
+    "title": "Event Lain Buat Kamu",
+    "start_date": "23 Juni 2017",
+    "end_date": "25 Juni 2017",
+    "start_time": "10:00",
+    "end_time": "17:00", 
+    "status": "Publish"
+  }, {
+    "id": 4, 
+    "title": "Event Bukber Rame-rame",
+    "start_date": "23 Juni 2017",
+    "end_date": "23 Juni 2017",
+    "start_time": "10:00",
+    "end_time": "17:00", 
+    "status": "Publish"
+  }, {
+    "id": 5, 
+    "title": "Bersenang-senang Di DWP 2017",
+    "start_date": "23 Juni 2017",
+    "end_date": "25 Juni 2017",
+    "start_time": "10:00",
+    "end_time": "17:00", 
+    "status": "Publish"
+  }, {
+    "id": 6, 
+    "title": "Tunjukkan Passion Musikmu di Soundrenaline",
+    "start_date": "23 Juni 2017",
+    "end_date": "23 Juni 2017",
+    "start_time": "10:00",
+    "end_time": "17:00", 
+    "status": "Publish"
+  }, {
+    "id": 7, 
+    "title": "Event Lain Buat Kamu",
+    "start_date": "23 Juni 2017",
+    "end_date": "25 Juni 2017",
+    "start_time": "10:00",
+    "end_time": "17:00", 
+    "status": "Publish"
+  }, {
+    "id": 8, 
+    "title": "Event Bukber Rame-rame",
+    "start_date": "23 Juni 2017",
+    "end_date": "23 Juni 2017",
+    "start_time": "10:00",
+    "end_time": "17:00", 
+    "status": "Publish"
+  }, {
+    "id": 9, 
+    "title": "Bersenang-senang Di DWP 2017",
+    "start_date": "23 Juni 2017",
+    "end_date": "25 Juni 2017",
+    "start_time": "10:00",
+    "end_time": "17:00", 
+    "status": "Publish"
+  }, {
+    "id": 10, 
+    "title": "Tunjukkan Passion Musikmu di Soundrenaline",
+    "start_date": "23 Juni 2017",
+    "end_date": "23 Juni 2017",
+    "start_time": "10:00",
+    "end_time": "17:00", 
+    "status": "Publish"
+  }, {
+    "id": 11, 
+    "title": "Event Lain Buat Kamu",
+    "start_date": "23 Juni 2017",
+    "end_date": "25 Juni 2017",
+    "start_time": "10:00",
+    "end_time": "17:00", 
+    "status": "Publish"
+  }, {
+    "id": 12, 
+    "title": "Event Bukber Rame-rame",
+    "start_date": "23 Juni 2017",
+    "end_date": "23 Juni 2017",
+    "start_time": "10:00",
+    "end_time": "17:00", 
+    "status": "Publish"
+  }, {
+    "id": 13, 
+    "title": "Bersenang-senang Di DWP 2017",
+    "start_date": "23 Juni 2017",
+    "end_date": "25 Juni 2017",
+    "start_time": "10:00",
+    "end_time": "17:00", 
+    "status": "Publish"
+  }, {
+    "id": 14, 
+    "title": "Tunjukkan Passion Musikmu di Soundrenaline",
+    "start_date": "23 Juni 2017",
+    "end_date": "23 Juni 2017",
+    "start_time": "10:00",
+    "end_time": "17:00", 
+    "status": "Publish"
+  }, {
+    "id": 15, 
+    "title": "Event Lain Buat Kamu",
+    "start_date": "23 Juni 2017",
+    "end_date": "25 Juni 2017",
+    "start_time": "10:00",
+    "end_time": "17:00", 
+    "status": "Publish"
+  }, {
+    "id": 16, 
+    "title": "Event Bukber Rame-rame",
+    "start_date": "23 Juni 2017",
+    "end_date": "23 Juni 2017",
+    "start_time": "10:00",
+    "end_time": "17:00", 
+    "status": "Publish"
+  }, {
+    "id": 17, 
+    "title": "Bersenang-senang Di DWP 2017",
+    "start_date": "23 Juni 2017",
+    "end_date": "25 Juni 2017",
+    "start_time": "10:00",
+    "end_time": "17:00", 
+    "status": "Publish"
+  }, {
+    "id": 18, 
+    "title": "Tunjukkan Passion Musikmu di Soundrenaline",
+    "start_date": "23 Juni 2017",
+    "end_date": "23 Juni 2017",
+    "start_time": "10:00",
+    "end_time": "17:00", 
+    "status": "Publish"
+  }, {
+    "id": 19, 
+    "title": "Event Lain Buat Kamu",
+    "start_date": "23 Juni 2017",
+    "end_date": "25 Juni 2017",
+    "start_time": "10:00",
+    "end_time": "17:00", 
+    "status": "Publish"
+  }, {
+    "id": 20, 
+    "title": "Event Bukber Rame-rame",
+    "start_date": "23 Juni 2017",
+    "end_date": "23 Juni 2017",
+    "start_time": "10:00",
+    "end_time": "17:00", 
+    "status": "Publish"
+  }, {
+    "id": 21, 
+    "title": "Bersenang-senang Di DWP 2017",
+    "start_date": "23 Juni 2017",
+    "end_date": "25 Juni 2017",
+    "start_time": "10:00",
+    "end_time": "17:00", 
+    "status": "Publish"
+  }, {
+    "id": 22, 
+    "title": "Tunjukkan Passion Musikmu di Soundrenaline",
+    "start_date": "23 Juni 2017",
+    "end_date": "23 Juni 2017",
+    "start_time": "10:00",
+    "end_time": "17:00", 
+    "status": "Publish"
+  }, {
+    "id": 23, 
+    "title": "Event Lain Buat Kamu",
+    "start_date": "23 Juni 2017",
+    "end_date": "25 Juni 2017",
+    "start_time": "10:00",
+    "end_time": "17:00", 
+    "status": "Publish"
+  }, {
+    "id": 24, 
+    "title": "Event Bukber Rame-rame",
+    "start_date": "23 Juni 2017",
+    "end_date": "23 Juni 2017",
+    "start_time": "10:00",
+    "end_time": "17:00", 
+    "status": "Publish"
+  }], 
+  "master_interest": [{
+    "id": 1, 
+    "name": "Photography",
+    "brand": "A Mild",
+    "created_date": "7 Juli 2017", 
+    "initial_image": "/assets/images/img/dummy.png",
+    "selected_image": "/assets/images/img/dummy.png",
+    "status": "Publish"
+  }, 
+  {
+    "id": 2, 
+    "name": "Music",
+    "brand": "A Mild",
+    "created_date": "7 Juli 2017", 
+    "initial_image": "/assets/images/img/dummy.png",
+    "selected_image": "/assets/images/img/dummy.png",
+    "status": "Publish"
+  }, 
+  {
+    "id": 3, 
+    "name": "Technology",
+    "brand": "Marlboro",
+    "created_date": "7 Juli 2017", 
+    "initial_image": "/assets/images/img/dummy.png",
+    "selected_image": "/assets/images/img/dummy.png",
+    "status": "Unpublish"
+  }, 
+  {
+    "id": 4, 
+    "name": "Automotive",
+    "brand": "Marlboro",
+    "created_date": "7 Juli 2017", 
+    "initial_image": "/assets/images/img/dummy.png",
+    "selected_image": "/assets/images/img/dummy.png",
+    "status": "Publish"
+  }, 
+  {
+    "id": 5, 
+    "name": "Visual Arts",
+    "brand": "A Mild",
+    "created_date": "7 Juli 2017", 
+    "initial_image": "/assets/images/img/dummy.png",
+    "selected_image": "/assets/images/img/dummy.png",
+    "status": "Publish"
+  }], 
+  "master_brand_preference": [{
+    "id": 1, 
+    "name": "Brand Name 1",
+    "regis_brand": "Regis Brand A",
+    "status": "Publish"
+  }, 
+  {
+    "id": 2, 
+    "name": "Brand Name 2",
+    "regis_brand": "Regis Brand B",
+    "status": "Publish"
+  }, 
+  {
+    "id": 3, 
+    "name": "Brand Name 3",
+    "regis_brand": "Regis Brand A",
+    "status": "Publish"
+  }, 
+  {
+    "id": 4, 
+    "name": "Brand Name 4",
+    "regis_brand": "Regis Brand A",
+    "status": "Unpublish"
+  }, 
+  {
+    "id": 5, 
+    "name": "Brand Name 5",
+    "regis_brand": "Regis Brand C",
+    "status": "Publish"
+  }], 
+  "master_brand": [{
+    "id": 1, 
+    "name": "Brand Name 1",
+    "registration_cell_id": "Regis Cell 1",
+    "status": "Publish"
+  }, 
+  {
+    "id": 2, 
+    "name": "Brand Name 2",
+    "registration_cell_id": "Regis Cell 2",
+    "status": "Publish"
+  }, 
+  {
+    "id": 3, 
+    "name": "Brand Name 3",
+    "registration_cell_id": "Regis Cell 3",
+    "status": "Publish"
+  }, 
+  {
+    "id": 4, 
+    "name": "Brand Name 4",
+    "registration_cell_id": "Regis Cell 4",
+    "status": "Unpublish"
+  }, 
+  {
+    "id": 5, 
+    "name": "Brand Name 5",
+    "registration_cell_id": "Regis Cell 5",
+    "status": "Publish"
+  }], 
+  "master_security_question": [{
+    "id": 1, 
+    "security_code": "1234",
+    "security_question": "What was the name of your first pet?",
+    "status": "Publish"
+  }, 
+  {
+    "id": 2, 
+    "security_code": "1234",
+    "security_question": "What is your dream job?",
+    "status": "Publish"
+  }, 
+  {
+    "id": 3, 
+    "security_code": "1234",
+    "security_question": "In what city did your parents meet?",
+    "status": "Publish"
+  }, 
+  {
+    "id": 4, 
+    "security_code": "1234",
+    "security_question": "Who was your best childhood friend?",
+    "status": "Unpublish"
+  }, 
+  {
+    "id": 5, 
+    "security_code": "1234",
+    "security_question": "What was the name of your first manager?",
+    "status": "Publish"
+  }], 
+  "rewards": [{
+    "id": 1, 
+    "rewards_name": "Abcdefg Hijklmnop",
+    "description": "Description checkin 1"
+  }, 
+  {
+    "id": 2, 
+    "rewards_name": "Abcdefg Hijklmnop",
+    "description": "Description checkin 2"
+  }, 
+  {
+    "id": 3, 
+    "rewards_name": "Abcdefg Hijklmnop",
+    "description": "Description checkin 3"
+  }, 
+  {
+    "id": 4, 
+    "rewards_name": "Abcdefg Hijklmnop",
+    "description": "Description checkin 4"
+  }, 
+  {
+    "id": 5, 
+    "rewards_name": "Abcdefg Hijklmnop",
+    "description": "Description checkin 5"
+  }], 
+  "checkin": [{
+    "id": 1, 
+    "name": "Abcdefg Hijklmnop",
+    "email": "Description checkin 1", 
+    "phone": "081234567890", 
+    "datetime": "10 July 2017"
+  }, 
+  {
+    "id": 2, 
+    "name": "Abcdefg Hijklmnop",
+    "email": "Description checkin 1", 
+    "phone": "081234567890", 
+    "datetime": "10 July 2017"
+  }, 
+  {
+    "id": 3, 
+    "name": "Abcdefg Hijklmnop",
+    "email": "Description checkin 1", 
+    "phone": "081234567890", 
+    "datetime": "10 July 2017"
+  }, 
+  {
+    "id": 4, 
+    "name": "Abcdefg Hijklmnop",
+    "email": "Description checkin 1", 
+    "phone": "081234567890", 
+    "datetime": "10 July 2017"
+  }, 
+  {
+    "id": 5, 
+    "name": "Abcdefg Hijklmnop",
+    "email": "Description checkin 1", 
+    "phone": "081234567890", 
+    "datetime": "10 July 2017"
+  }], 
+  "attend": [{
+    "id": 1, 
+    "name": "Abcdefg Hijklmnop",
+    "email": "Description checkin 1", 
+    "phone": "081234567890", 
+    "datetime": "10 July 2017"
+  }, 
+  {
+    "id": 2, 
+    "name": "Abcdefg Hijklmnop",
+    "email": "Description checkin 1", 
+    "phone": "081234567890", 
+    "datetime": "10 July 2017"
+  }, 
+  {
+    "id": 3, 
+    "name": "Abcdefg Hijklmnop",
+    "email": "Description checkin 1", 
+    "phone": "081234567890", 
+    "datetime": "10 July 2017"
+  }, 
+  {
+    "id": 4, 
+    "name": "Abcdefg Hijklmnop",
+    "email": "Description checkin 1", 
+    "phone": "081234567890", 
+    "datetime": "10 July 2017"
+  }, 
+  {
+    "id": 5, 
+    "name": "Abcdefg Hijklmnop",
+    "email": "Description checkin 1", 
+    "phone": "081234567890", 
+    "datetime": "10 July 2017"
+  }], 
+  "user_list": [{
+    "id": 1, 
+    "name": "Budi Suherman",
+    "spice_id": 32893120, 
+    "city": "Jakarta", 
+    "valid_email": 1, 
+    "valid_phone": 1, 
+    "point": 1234
+  }, 
+  {
+    "id": 2, 
+    "name": "Budi Suhermin",
+    "spice_id": 32893121, 
+    "city": "Jakarta", 
+    "valid_email": 1, 
+    "valid_phone": 0, 
+    "point": 1232
+  }, 
+  {
+    "id": 3, 
+    "name": "Bidi Saherman",
+    "spice_id": 32893220, 
+    "city": "Jakarta", 
+    "valid_email": 1, 
+    "valid_phone": 1, 
+    "point": 123
+  }, 
+  {
+    "id": 4, 
+    "name": "Boedi Soeherman",
+    "spice_id": 42893120, 
+    "city": "Surabaya", 
+    "valid_email": 0, 
+    "valid_phone": 1, 
+    "point": 1230
+  }, 
+  {
+    "id": 5, 
+    "name": "Bidu Sahermun",
+    "spice_id": 32893190, 
+    "city": "Medan", 
+    "valid_email": 1, 
+    "valid_phone": 1, 
+    "point": 1238
+  }], 
+  "merchant_list": [{
+    "id": 1, 
+    "name": "Merchant Abcdefg",
+    "outlet_name": "Outlet A", 
+    "code": "123",
+    "city": "Jakarta",
+    "aldmic_merchant_id": 829742987, 
+    "total_rewards": 23
+  }, 
+  {
+    "id": 2, 
+    "name": "Merchant Abcdefg",
+    "outlet_name": "Outlet B", 
+    "code": "123",
+    "city": "Jakarta",
+    "aldmic_merchant_id": 829742987, 
+    "total_rewards": 12
+  }, 
+  {
+    "id": 3, 
+    "name": "Merchant Abcdefg",
+    "outlet_name": "Outlet C", 
+    "code": "123",
+    "city": "Jakarta",
+    "aldmic_merchant_id": 829742987, 
+    "total_rewards": 0
+  }, 
+  {
+    "id": 4, 
+    "name": "Merchant Abcdefg",
+    "outlet_name": "Outlet D", 
+    "code": "123",
+    "city": "Jakarta",
+    "aldmic_merchant_id": 829742987, 
+    "total_rewards": 103
+  }, 
+  {
+    "id": 5, 
+    "name": "Merchant Abcdefg",
+    "outlet_name": "Outlet E", 
+    "code": "123",
+    "city": "Jakarta",
+    "aldmic_merchant_id": 829742987, 
+    "total_rewards": 4
+  }], 
+  "merchant_admin": [{
+    "id": 829742987, 
+    "name": "Merchant Abcdefg",
+    "outlet_name": "Outlet A", 
+    "code": "123",
+    "city": "Jakarta",
+    "total_rewards": 4
+  }, 
+  {
+    "id": 829742987, 
+    "name": "Merchant Abcdefg",
+    "outlet_name": "Outlet E", 
+    "code": "123",
+    "city": "Jakarta",
+    "total_rewards": 4
+  }, 
+  {
+    "id": 829742987, 
+    "name": "Merchant Abcdefg",
+    "outlet_name": "Outlet C", 
+    "code": "123",
+    "city": "Jakarta",
+    "total_rewards": 4
+  }, 
+  {
+    "id": 829742987, 
+    "name": "Merchant Abcdefg",
+    "outlet_name": "Outlet D", 
+    "code": "123",
+    "city": "Jakarta",
+    "total_rewards": 4
+  }, 
+  {
+    "id": 829742987, 
+    "name": "Merchant Abcdefg",
+    "outlet_name": "Outlet E", 
+    "code": "123",
+    "city": "Jakarta",
+    "total_rewards": 4
+  }], 
+  "merchant_rewards": [{
+    "id": 1, 
+    "name": "Rewards 1",
+    "voucher_type": "Voucher Type A", 
+    "redeem_type": "Redeem Type Z",
+    "point": 321,
+    "aldmic_offer_id": 321, 
+    "status": "Publish"
+  }, 
+  {
+    "id": 2, 
+    "name": "Rewards 1",
+    "voucher_type": "Voucher Type B", 
+    "redeem_type": "Redeem Type Y",
+    "point": 322,
+    "aldmic_offer_id": 320, 
+    "status": "Unpublish"
+  }, 
+  {
+    "id": 3, 
+    "name": "Rewards 1",
+    "voucher_type": "Voucher Type C", 
+    "redeem_type": "Redeem Type X",
+    "point": 78,
+    "aldmic_offer_id": 3, 
+    "status": "Publish"
+  }, 
+  {
+    "id": 4, 
+    "name": "Rewards 1",
+    "voucher_type": "Voucher Type D", 
+    "redeem_type": "Redeem Type W",
+    "point": 56,
+    "aldmic_offer_id": 21, 
+    "status": "Publish"
+  }, 
+  {
+    "id": 5, 
+    "name": "Rewards 1",
+    "voucher_type": "Voucher Type E", 
+    "redeem_type": "Redeem Type V",
+    "point": 23,
+    "aldmic_offer_id": 31, 
+    "status": "Unpublish"
+  }], 
+  "rewards_highlights": [{
+    "id": 1, 
+    "name": "Rewards 1",
+    "description": "Description Rewards Highlights",
+    "voucher_type": "Voucher Type A", 
+    "redeem_type": "Redeem Type Z",
+    "point": 321,
+    "aldmic_offer_id": 321, 
+    "order": 1
+  }, 
+  {
+    "id": 2, 
+    "name": "Rewards 1",
+    "description": "Description Rewards Highlights",
+    "voucher_type": "Voucher Type B", 
+    "redeem_type": "Redeem Type Y",
+    "point": 322,
+    "aldmic_offer_id": 320, 
+    "order": 2
+  }, 
+  {
+    "id": 3, 
+    "name": "Rewards 1",
+    "description": "Description Rewards Highlights",
+    "voucher_type": "Voucher Type C", 
+    "redeem_type": "Redeem Type X",
+    "point": 78,
+    "aldmic_offer_id": 3, 
+    "order": 3
+  }, 
+  {
+    "id": 4, 
+    "name": "Rewards 1",
+    "description": "Description Rewards Highlights",
+    "voucher_type": "Voucher Type D", 
+    "redeem_type": "Redeem Type W",
+    "point": 56,
+    "aldmic_offer_id": 21, 
+    "order": 4
+  }, 
+  {
+    "id": 5, 
+    "name": "Rewards 1",
+    "description": "Description Rewards Highlights",
+    "voucher_type": "Voucher Type E", 
+    "redeem_type": "Redeem Type V",
+    "point": 23,
+    "aldmic_offer_id": 31, 
+    "order": 5
+  }], 
+  "popular_logic": [{
+    "id": 1, 
+    "initiate_point": 10,
+    "point_per_view": 20,
+    "point_per_like": 30, 
+    "reduce_point_per_day": 4
+  }, 
+  {
+    "id": 2, 
+    "initiate_point": 10,
+    "point_per_view": 20,
+    "point_per_like": 30, 
+    "reduce_point_per_day": 4
+  }, 
+  {
+    "id": 3, 
+    "initiate_point": 10,
+    "point_per_view": 20,
+    "point_per_like": 30, 
+    "reduce_point_per_day": 4
+  }, 
+  {
+    "id": 4, 
+    "initiate_point": 10,
+    "point_per_view": 20,
+    "point_per_like": 30, 
+    "reduce_point_per_day": 4
+  }, 
+  {
+    "id": 5, 
+    "initiate_point": 10,
+    "point_per_view": 20,
+    "point_per_like": 30, 
+    "reduce_point_per_day": 4
+  }], 
+  "admin_list": [{
+    "id": 1, 
+    "role": "Admin",
+    "username": "Supri",
+    "password": "@@@@asdlajslkdj@@@"
+  }, 
+  {
+    "id": 2, 
+    "role": "Admin",
+    "username": "Sapri",
+    "password": "@@@@asdlajslnkdj@@@"
+  }, 
+  {
+    "id": 3, 
+    "role": "Super Admin",
+    "username": "Supra",
+    "password": "@@@@askdlajslkdj@@@"
+  }, 
+  {
+    "id": 4, 
+    "role": "Admin",
+    "username": "Supratman",
+    "password": "@@@@asdwlajslkdj@@@"
+  }, 
+  {
+    "id": 5, 
+    "role": "Super Admin",
+    "username": "Supratmin",
+    "password": "@@@@asdglajslkdj@@@"
+  }], 
+  "user_access": [{
+    "id": 1, 
+    "role": "Super Admin"
+  }, 
+  {
+    "id": 2, 
+    "role": "Admin"
+  }], 
+  "activity_point": [{
+    "id": 1, 
+    "activity": "Register", 
+    "description": "Activity Description goes here", 
+    "point": 250
+  }, 
+  {
+    "id": 2, 
+    "activity": "Log In", 
+    "description": "Activity Description goes here", 
+    "point": 50
+  }], 
+  "history_point": [{
+    "id": 1, 
+    "rp": 2000, 
+    "set_date": "1 Juni 2017"
+  }, 
+  {
+    "id": 2, 
+    "rp": 4000, 
+    "set_date": "11 Juli 2017"
+  }],
+  "outlet_list": [{
+    "id": 1, 
+    "name": "Outlet A"
+  }, 
+  {
+    "id": 2, 
+    "name": "Outlet B"
+  },
+  {
+    "id": 3, 
+    "name": "Outlet C"
+  }], 
+  "highlight": [{
+    "id": 1, 
+    "category": "Event",
+    "title": "Bersenang-senang Di DWP 2017",
+    "image": "/assets/images/img/dummy.png",
+    "start_date": "7 Juli 2017", 
+    "end_date": "7 Agustus 2017"
+  }, 
+  {
+    "id": 2, 
+    "category": "Venue",
+    "title": "Bersenang-senang Di DWP 2017",
+    "image": "/assets/images/img/dummy.png",
+    "start_date": "7 Agustus 2017", 
+    "end_date": "7 September 2017"
+  }, 
+  {
+    "id": 3, 
+    "category": "Exciting Things",
+    "title": "Bersenang-senang Di DWP 2017",
+    "image": "/assets/images/img/dummy.png",
+    "start_date": "1 Desember 2017", 
+    "end_date": "1 Januari 2018"
+  }, 
+  {
+    "id": 4, 
+    "category": "Event",
+    "title": "Bersenang-senang Di DWP 2017",
+    "image": "/assets/images/img/dummy.png",
+    "start_date": "7 Juli 2017", 
+    "end_date": "7 Agustus 2017"
+  }, 
+  {
+    "id": 5, 
+    "category": "Venue",
+    "title": "Bersenang-senang Di DWP 2017",
+    "image": "/assets/images/img/dummy.png",
+    "start_date": "7 Agustus 2017", 
+    "end_date": "7 September 2017"
+  }, 
+  {
+    "id": 6, 
+    "category": "Exciting Things",
+    "title": "Bersenang-senang Di DWP 2017",
+    "image": "/assets/images/img/dummy.png",
+    "start_date": "1 Desember 2017", 
+    "end_date": "1 Januari 2018"
+  }, 
+  {
+    "id": 7, 
+    "category": "Event",
+    "title": "Bersenang-senang Di DWP 2017",
+    "image": "/assets/images/img/dummy.png",
+    "start_date": "7 Juli 2017", 
+    "end_date": "7 Agustus 2017"
+  }, 
+  {
+    "id": 8, 
+    "category": "Venue",
+    "title": "Bersenang-senang Di DWP 2017",
+    "image": "/assets/images/img/dummy.png",
+    "start_date": "7 Agustus 2017", 
+    "end_date": "7 September 2017"
+  }, 
+  {
+    "id": 9, 
+    "category": "Exciting Things",
+    "title": "Bersenang-senang Di DWP 2017",
+    "image": "/assets/images/img/dummy.png",
+    "start_date": "1 Desember 2017", 
+    "end_date": "1 Januari 2018"
+  }]
+}

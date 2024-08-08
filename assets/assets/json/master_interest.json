@@ -1,0 +1,20 @@
+{
+	"name": "Photography",
+	"brand": 3, 
+	"initial_image": "/assets/images/img/dummy.png", 
+	"selected_image": "/assets/images/img/dummy.png",
+	"interest_data": {
+		"name": "Photography",
+		"brand": 3, 
+		"initial_image": "/assets/images/img/dummy.png", 
+		"selected_image": "/assets/images/img/dummy.png"
+	}, 
+	"interest": {
+		"data": {
+			"name": "Photography",
+			"brand": 3, 
+			"initial_image": "/assets/images/img/dummy.png", 
+			"selected_image": "/assets/images/img/dummy.png"
+		}
+	}
+}

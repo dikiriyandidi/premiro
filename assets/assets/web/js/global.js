@@ -1,0 +1,1 @@
+function run(){for(var n in functions)functions[n]()}$(document).ready(function(){run()});

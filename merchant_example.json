@@ -1,0 +1,124 @@
+{
+    "request_id": "REQ001",
+    "merchant": [
+    {
+        "merchant_id" : "STRBCK",
+        "merchant_name" : "Starbucks",
+        "merchant_info" : "ABC",
+        "merchant_status" : 1,
+        "merchant_outlet" : [
+            {
+            "outlet_code" : "STRBCK_GANCIT",
+            "outlet_name" : "Gandaria City",
+            "outlet_city" : "Jakarta Selatan"
+            },
+            {
+            "outlet_code" : "STRBCK_PIM",
+            "outlet_name" : "PIM",
+            "outlet_city" : "Jakarta Selatan"
+            }
+        ]
+    },
+    {
+        "merchant_id" : "COFBN",
+        "merchant_name" : "Cofee Bean",
+        "merchant_info" : "ABC",
+        "merchant_status" : 1,
+        "merchant_outlet" : [
+            {
+            "outlet_code" : "CFBN_GANCIT",
+            "outlet_name" : "Gandaria City",
+            "outlet_city" : "Jakarta Selatan"
+            }
+        ]
+    }
+    ],
+    "offer" :[{
+        "offer_id" : "OFF001",
+        "merchant_id" : "COFBN",
+        "offer_image" : [
+            {"_1440_1440":"image.jpg"}
+            ],
+        "offer_name" : "Voucher Buy 1 GetT 1 The Coffee Bean & Tea Leaf",
+        "offer_info" : "The Coffee Bean & Tea Leaf hingga 30 Juni 2017",
+        "offer_tmc" : "<p>1. Voucher hanya bisa ditukarkan di venue yang berpartisipasi (The Coffee Bean & Tea Leaf PIM 2)</p><br><p>2. Voucher hanya berlaku untuk 1 kali penukaran</p>",
+        "offer_long_desc" : "<p>Green Coffee Bean diperoleh dari biji kopi mentah dari tanaman Coffea. Extract Green Coffee Bean ini menjadi populer ketika banyak penelitian yang membuktikan manfaat Green Coffee Bean untuk menurunkan berat badan dan melawan obesitas. </p>",
+        "offer_outlet" : ["CFBN_GANCIT","CFBN_PIM1","CFBN_PIM2"],
+        "offer_voucher_type" : "online",
+        "offer_status" : 1,
+        "redeem_type" : "normal",
+        "offer_category" : "beverages",
+        "offer_price" : 10000, 
+        "offer_batch_start_date" : "08-06-2017",
+        "offer_batch_end_date" : "08-06-2017",
+        "offer_batch" :[{
+            "offer_batch_id" : "CFBN_BAT01",
+            "offer_batch_quota" : 10
+        }]
+    },
+    {
+        "offer_id" : "OFF002",
+        "merchant_id" : "COKE17",
+        "offer_image" : [
+            {"_1440_1440":"image.jpg"}
+            ],
+        "offer_name" : "Free Beverages Voucher DWP 2017",
+        "offer_info" : "Istora Senayan hingga 23 Juni 2017",
+        "offer_tmc" : "<p>1. Voucher hanya bisa ditukarkan di venue yang berpartisipasi (Istora Senayan)</p><br><p>2. Voucher hanya berlaku untuk 1 kali penukaran</p>",
+        "offer_long_desc" : "<p>Green Coffee Bean diperoleh dari biji kopi mentah dari tanaman Coffea. Extract Green Coffee Bean ini menjadi populer ketika banyak penelitian yang membuktikan manfaat Green Coffee Bean untuk menurunkan berat badan dan melawan obesitas. </p>",
+        "offer_outlet" : ["DWPJKT"],
+        "offer_voucher_type" : "online",
+        "offer_status" : 1,
+        "redeem_type" : "normal",
+        "offer_category" : "beverages",
+        "offer_price" : 10000, 
+        "offer_batch_start_date" : "08-06-2017",
+        "offer_batch_end_date" : "08-06-2017",
+        "offer_batch" :[{
+            "offer_batch_id" : "DWP_BAT01",
+            "offer_batch_quota" : 10
+        }]
+    }]
+    
+}
+
+{
+  "api_version": "0.0.1",
+  "memory_usage": "11.26 MB",
+  "elapse_time": "0.46",
+  "lang": "en",
+  "error": [],
+  "data": {
+    "token": {
+      "created_date": "2017-06-15T06:24:33.685Z",
+      "expired_date": "2017-06-16T06:24:33.848Z",
+      "id": 2,
+      "token_code": "rKrwHGwoD7r9JmF58IhZQMW2h9X6dEmQ",
+      "refresh_token": "05YKKX8L8l3Vsi7TtvZYOVGI4eJqKtkJ",
+      "device_id": ""
+    }
+  }
+}
+
+{
+  "api_version": "0.0.1",
+  "memory_usage": "47.90 KB",
+  "elapse_time": "0.02",
+  "lang": "en",
+  "error": [],
+  "data": {
+    "data": {
+      "id": 1,
+      "device_id": "",
+      "token_code": "gzyylnV7HBcCHeSDJBmEQRAe7V54FPLy",
+      "refresh_token": "05YKKX8L8l3Vsi7TtvZYOVGI4eJqKtkJ",
+      "created_date": "2017-06-15T02:57:08.000Z",
+      "expired_date": "2017-06-16T03:06:44.742Z",
+      "token_profile": {
+        "user_id": null,
+        "admin_id": null,
+        "last_activity": "2017-06-15T02:57:08.000Z"
+      }
+    }
+  }
+}

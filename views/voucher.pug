@@ -1,0 +1,24 @@
+extends layout
+
+block content
+    <ol class="breadcrumb">
+        <li>Main Navigation</li>
+        <li>Voucher</li>
+    </ol>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="panel panel-wknd">
+                    <div class="panel-body">
+                        <input type="hidden" id="wknd_csrf" name="#{csrf_token_name}" value="#{csrf_token}" />
+                        <div class="table-responsive">
+                            <table id="datatable_content" class="table table-striped table-hover datatable_act" form-url="/cms/voucher/create">
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="#{myConfig.asset_url}/assets/js/views/voucher.js?v=#{myConfig.asset_version}"></script>

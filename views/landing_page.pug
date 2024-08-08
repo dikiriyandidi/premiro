@@ -1,0 +1,648 @@
+//- extends layout_landing
+
+//- block content_web
+//- 	<div class="bg--1"></div>
+//- 	<div class="bg--2"></div>
+
+//- 	<!-- Header -->
+//- 	<header class="header-landing">
+//- 		<a href="/" class="header__logo">
+//- 			<img src="#{myConfig.asset_url}/assets/img/Logo-wknd-white.svg">
+//- 		</a>
+//- 		<div class="header__nav">
+//- 			//- <ul>
+//- 			//- 	<li><a href="#hangout" class="page-scroll">Features</a></li>
+//- 			//- 	<li><a href="#subscribe" class="page-scroll">Notify Me</a></li>
+//- 			//- </ul>
+//- 		</div>
+//- 		<div class="mobile-menu">
+//- 			<div class="mobile-menu__wrapper">
+//- 				<div class="mobile-menu__content">
+//- 					<ul>
+//- 						<li>
+//- 							<a class="main-menu page-scroll" href="#hangout">Features</a>
+//- 						</li>
+//- 						<li>
+//- 							<a class="main-menu page-scroll" href="#subscribe">Subscribe</a>
+//- 						</li>
+//- 						<li>
+//- 							<a href="/web/faq">FAQ & Help</a>
+//- 						</li>
+//- 						<li>
+//- 							<a href="/web/tnc">Terms & Conditions</a>
+//- 						</li>
+//- 						<li>
+//- 							<a href="/web/contact">Contact Us</a>
+//- 						</li>
+//- 					</ul>
+//- 				</div>
+//- 			</div>
+//- 			<div class="mobile-menu__footer">&copy; #{new Date().getFullYear()} #{myConfig.company_name}. All rights reserved.</div>
+//- 		</div>
+//- 		<a href="/web/" class="header__logo mobile">
+//- 			<img src="#{myConfig.asset_url}/assets/web/images/icon/logo-wknd-hamburger.svg">
+//- 		</a>
+//- 		<div class="hamburger hamburger--slider-r" id="hamburger">
+//- 			<div class="hamburger-box">
+//- 				<div class="hamburger-inner"></div>
+//- 			</div>
+//- 		</div>
+//- 	</header>
+
+//- 	<!-- Explore -->
+//- 	<section class="explore fh">
+//- 		<div class="explore__bg">
+//- 			<div class="explore__bg-w">
+//- 				<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 968 993.03"><path d="M940.2 308.344L640.255 24.289C616.929 2.27 583.516-5.509 552.851 3.941L158.088 126.264c-30.246 9.349-53.392 34.337-60.645 65.421L2.36 599.209c-7.253 31.085 2.494 63.532 25.441 85.458l299.945 284.06c23.323 22.019 56.736 29.798 87.404 20.348l394.763-122.329c30.245-9.344 53.389-34.331 60.642-65.416l95.084-407.524c7.252-31.085-2.492-63.528-25.439-85.462zm-517.831 453.59c-146.116-34.016-236.941-180.458-202.755-326.978C253.8 288.438 399.895 197.148 546.198 231.208c140.263 32.654 229.479 168.935 206.022 309.561-194.667-47.72-226.961-103.803-230.789-203.413-54.026 99.334-83.151 117.529-195.911 122.256 99.05 54.034 117.12 83.219 121.614 196.179 47.521-87.658 101.309-123.698 297.037-80.526-41.2 136.492-181.539 219.323-321.802 186.669z" class="bighexagon" />
+//- 				</svg>
+//- 			</div>
+//- 		</div>
+//- 		<div class="explore__img--1">
+//- 			<div class="img--1__w">
+//- 				<div class="img--1__img" style="background-image: url(#{myConfig.asset_url}/assets/web/images/icon/Landing/1-Opening/1-Image-Tangan.png)"></div>
+//- 			</div>
+//- 		</div>
+//- 		<div class="explore__img--2">
+//- 			<div class="img--2__w">
+//- 				<div class="img--2__img"></div>
+//- 			</div>
+//- 		</div>
+//- 		<div class="landing-container">
+//- 			<div class="explore__text">
+//- 				<div class="explore__text__title">Explore & get rewards.</div>
+//- 				<div class="explore__text__desc">Hanya di sini kamu punya kesempatan mendapatkan hadiah dengan explore app-nya.</div>
+//- 			</div>
+//- 			<a href=".hangout" class="explore__arrow page-scroll">
+//- 				<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 67 75">
+//- 					<path d="M62.326 17.16L36.721 2.358c-1.99-1.146-4.453-1.146-6.443 0L4.672 17.16C2.71 18.292 1.5 20.391 1.5 22.656v29.687c0 2.265 1.21 4.35 3.172 5.496l25.606 14.802c1.99 1.146 4.453 1.146 6.443 0l25.605-14.802c1.962-1.133 3.173-3.231 3.173-5.496V22.656c0-2.265-1.211-4.35-3.173-5.496z" class="arrow-out" />
+//- 					<path d="M32 42.712L20 30.907l2.264-2.227L32 38.258l9.736-9.578L44 30.907 32 42.712z" class="arrow-in"/>
+//- 				</svg>
+//- 			</a>
+//- 		</div>
+//- 	</section>
+
+//- 	<!-- Hangout -->
+//- 	<section class="hangout fh" id="hangout">
+//- 		<div class="hangout__img--6">
+//- 			<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 340 328">
+//- 				<defs>
+//- 					style. 
+//- 						.cls-1 { filter: url(#drop-shadow-1); fill-rule: evenodd; } 
+//- 					<filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+//- 						<feOffset dy="20" in="SourceAlpha" />
+//- 						<feGaussianBlur stdDeviation="7.071" result="dropBlur" />
+//- 						<feFlood flood-color="#333" flood-opacity=".35" />
+//- 						<feComposite operator="in" in2="dropBlur" result="dropShadowComp" />
+//- 						<feComposite in="SourceGraphic" result="shadowed" />
+//- 					</filter>
+//- 				</defs>
+//- 				<path d="M201.974 52.054l-96.879 13.275c-7.52 1.042-13.873 6.052-16.618 13.105l-35.198 90.887c-2.702 6.959-1.452 14.924 3.267 20.861l61.852 77.831c4.718 5.936 12.184 8.94 19.632 7.954l96.879-13.274c7.522-1.043 13.873-6.053 16.618-13.105l35.199-90.887c2.702-6.959 1.452-14.925-3.266-20.861l-61.853-77.831c-4.719-5.937-12.185-8.941-19.633-7.955z" class="cls-1 hexagon" />
+//- 			</svg>
+//- 		</div>
+//- 		<div class="hangout__img--4">
+//- 			<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 340 328">
+//- 				<defs>
+//- 					style.
+//- 						.cls-1 { filter: url(#drop-shadow-1); fill-rule: evenodd; }
+					
+//- 					<filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+//- 						<feOffset dy="20" in="SourceAlpha" />
+//- 						<feGaussianBlur stdDeviation="7.071" result="dropBlur" />
+//- 						<feFlood flood-color="#333" flood-opacity=".35" />
+//- 						<feComposite operator="in" in2="dropBlur" result="dropShadowComp" />
+//- 						<feComposite in="SourceGraphic" result="shadowed" />
+//- 					</filter>
+//- 				</defs>
+//- 				<path d="M201.974 52.054l-96.879 13.275c-7.52 1.042-13.873 6.052-16.618 13.105l-35.198 90.887c-2.702 6.959-1.452 14.924 3.267 20.861l61.852 77.831c4.718 5.936 12.184 8.94 19.632 7.954l96.879-13.274c7.522-1.043 13.873-6.053 16.618-13.105l35.199-90.887c2.702-6.959 1.452-14.925-3.266-20.861l-61.853-77.831c-4.719-5.937-12.185-8.941-19.633-7.955z" class="cls-1 hexagon" />
+//- 			</svg>
+//- 		</div>
+//- 		<div class="hangout__img--5">
+//- 			<div class="img--5__w">
+//- 				<div class="img--5__img" style="background-image: url(#{myConfig.asset_url}/assets/web/images/icon/Landing/2-Event&Venue/2-Image-Gitar.png)"></div>
+//- 			</div>
+//- 		</div>
+//- 		<div class="hangout__img--8">
+//- 			<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 166 163.06">
+//- 				<defs>
+//- 					style.
+//- 						.cls-1 { fill-rule: evenodd; }
+					
+//- 				</defs>
+//- 				<path d="M133.43 15.551L65.499.383C60.223-.786 54.691.951 51.028 4.927L3.94 56.206C.33 60.131-.911 65.696.683 70.778l20.901 66.633c1.594 5.083 5.781 8.909 10.995 10.097l67.931 15.168c5.276 1.169 10.808-.568 14.47-4.544l47.089-51.279c3.609-3.925 4.851-9.489 3.257-14.572l-20.901-66.633c-1.594-5.082-5.781-8.908-10.995-10.097z" class="cls-1 hexagon" />
+//- 			</svg>
+//- 		</div>
+//- 		<div class="hangout__img--3">
+//- 			<div class="img--3__w">
+//- 				<div class="img--3__img" style="background-image: url(#{myConfig.asset_url}/assets/web/images/icon/Landing/2-Event&Venue/2-Image-Popcorn.png)"></div>
+//- 			</div>
+//- 		</div>
+//- 		<div class="hangout__img--2">
+//- 			<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 340 328">
+//- 				<defs>
+//- 					style.
+//- 						.cls-1 { filter: url(#drop-shadow-1); fill-rule: evenodd; }
+					
+//- 					<filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+//- 						<feOffset dy="20" in="SourceAlpha" />
+//- 						<feGaussianBlur stdDeviation="7.071" result="dropBlur" />
+//- 						<feFlood flood-color="#333" flood-opacity=".35" />
+//- 						<feComposite operator="in" in2="dropBlur" result="dropShadowComp" />
+//- 						<feComposite in="SourceGraphic" result="shadowed" />
+//- 					</filter>
+//- 				</defs>
+//- 				<path d="M201.974 52.054l-96.879 13.275c-7.52 1.042-13.873 6.052-16.618 13.105l-35.198 90.887c-2.702 6.959-1.452 14.924 3.267 20.861l61.852 77.831c4.718 5.936 12.184 8.94 19.632 7.954l96.879-13.274c7.522-1.043 13.873-6.053 16.618-13.105l35.199-90.887c2.702-6.959 1.452-14.925-3.266-20.861l-61.853-77.831c-4.719-5.937-12.185-8.941-19.633-7.955z" class="cls-1 hexagon" />
+//- 			</svg>
+//- 		</div>
+//- 		<div class="hangout__img--7">
+//- 			<div class="img--7__w">
+//- 				<div class="img--7__img" style="background-image: url(#{myConfig.asset_url}/assets/web/images/icon/Landing/Pattern-100.png)"></div>
+//- 			</div>
+//- 		</div>
+
+//- 		<div class="landing-container">
+//- 			<div class="hangout__img--1">
+//- 				<div class="img--1__w">
+//- 					<div class="img--1__img" style="background-image: url(#{myConfig.asset_url}/assets/web/images/icon/Landing/2-Event&Venue/2-Image-Handphone-Venue.png)"></div>
+//- 				</div>
+//- 			</div>
+//- 			<div class="hangout__text">
+//- 				<div class="hangout__text__title">
+//- 					Best hangout spots for you.
+//- 				</div>
+//- 				<div class="hangout__text__desc">
+//- 					Suka live music? Ngopi? Atau nonton bareng sahabat-sahabatmu? Cek rekomendasi tempat-tempat hangout yang lagi hype di sini.
+//- 					Bahkan kamu bisa dapet invitation dan VIP tiket juga loh!
+//- 				</div>
+//- 			</div>
+//- 		</div>
+//- 	</section>
+
+//- 	<!-- Exclusive Rewards -->
+//- 	<section class="exclusive fh">
+//- 		<div class="exclusive__bg">
+//- 			<div class="exclusive__bg-w">
+//- 				<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 968 993.03">
+//- 					<path d="M940.2 308.344L640.255 24.289C616.929 2.27 583.516-5.509 552.851 3.941L158.088 126.264c-30.246 9.349-53.392 34.337-60.645 65.421L2.36 599.209c-7.253 31.085 2.494 63.532 25.441 85.458l299.945 284.06c23.323 22.019 56.736 29.798 87.404 20.348l394.763-122.329c30.245-9.344 53.389-34.331 60.642-65.416l95.084-407.524c7.252-31.085-2.492-63.528-25.439-85.462zm-517.831 453.59c-146.116-34.016-236.941-180.458-202.755-326.978C253.8 288.438 399.895 197.148 546.198 231.208c140.263 32.654 229.479 168.935 206.022 309.561-194.667-47.72-226.961-103.803-230.789-203.413-54.026 99.334-83.151 117.529-195.911 122.256 99.05 54.034 117.12 83.219 121.614 196.179 47.521-87.658 101.309-123.698 297.037-80.526-41.2 136.492-181.539 219.323-321.802 186.669z" class="bighexagon" />
+//- 				</svg>
+//- 			</div>
+//- 		</div>
+//- 		<div class="exclusive__img--5">
+//- 			<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 166 163.06">
+//- 				<defs>
+//- 					style.
+//- 						.cls-1 { fill-rule: evenodd; }
+					
+//- 				</defs>
+//- 				<path d="M133.43 15.551L65.499.383C60.223-.786 54.691.951 51.028 4.927L3.94 56.206C.33 60.131-.911 65.696.683 70.778l20.901 66.633c1.594 5.083 5.781 8.909 10.995 10.097l67.931 15.168c5.276 1.169 10.808-.568 14.47-4.544l47.089-51.279c3.609-3.925 4.851-9.489 3.257-14.572l-20.901-66.633c-1.594-5.082-5.781-8.908-10.995-10.097z" class="cls-1 hexagon" />
+//- 			</svg>
+//- 		</div>
+//- 		<div class="exclusive__img--10">
+//- 			<div class="img--10__w">
+//- 				<div class="img--10__img"></div>
+//- 			</div>
+//- 		</div>
+//- 		<div class="exclusive__img--11">
+//- 			<div class="img--11__w">
+//- 				<div class="img--11__img"></div>
+//- 			</div>
+//- 		</div>
+//- 		<div class="exclusive__img--4">
+//- 			<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 166 163.06">
+//- 				<defs>
+//- 					style.
+//- 						.cls-1 { fill-rule: evenodd; }
+					
+//- 				</defs>
+//- 				<path d="M133.43 15.551L65.499.383C60.223-.786 54.691.951 51.028 4.927L3.94 56.206C.33 60.131-.911 65.696.683 70.778l20.901 66.633c1.594 5.083 5.781 8.909 10.995 10.097l67.931 15.168c5.276 1.169 10.808-.568 14.47-4.544l47.089-51.279c3.609-3.925 4.851-9.489 3.257-14.572l-20.901-66.633c-1.594-5.082-5.781-8.908-10.995-10.097z" class="cls-1 hexagon" />
+//- 			</svg>
+//- 		</div>
+//- 		<div class="exclusive__img--6">
+//- 			<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 340 328">
+//- 				<defs>
+//- 					style.
+//- 						.cls-1 { filter: url(#drop-shadow-1); fill-rule: evenodd; }
+					
+//- 					<filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+//- 						<feOffset dy="20" in="SourceAlpha" />
+//- 						<feGaussianBlur stdDeviation="7.071" result="dropBlur" />
+//- 						<feFlood flood-color="#333" flood-opacity=".35" />
+//- 						<feComposite operator="in" in2="dropBlur" result="dropShadowComp" />
+//- 						<feComposite in="SourceGraphic" result="shadowed" />
+//- 					</filter>
+//- 				</defs>
+//- 				<path d="M201.974 52.054l-96.879 13.275c-7.52 1.042-13.873 6.052-16.618 13.105l-35.198 90.887c-2.702 6.959-1.452 14.924 3.267 20.861l61.852 77.831c4.718 5.936 12.184 8.94 19.632 7.954l96.879-13.274c7.522-1.043 13.873-6.053 16.618-13.105l35.199-90.887c2.702-6.959 1.452-14.925-3.266-20.861l-61.853-77.831c-4.719-5.937-12.185-8.941-19.633-7.955z" class="cls-1 hexagon" />
+//- 			</svg>
+//- 		</div>
+//- 		<div class="exclusive__img--7">
+//- 			<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 340 328">
+//- 				<defs>
+//- 					style.
+//- 						.cls-1 { filter: url(#drop-shadow-1); fill-rule: evenodd; }
+					
+//- 					<filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+//- 						<feOffset dy="20" in="SourceAlpha" />
+//- 						<feGaussianBlur stdDeviation="7.071" result="dropBlur" />
+//- 						<feFlood flood-color="#333" flood-opacity=".35" />
+//- 						<feComposite operator="in" in2="dropBlur" result="dropShadowComp" />
+//- 						<feComposite in="SourceGraphic" result="shadowed" />
+//- 					</filter>
+//- 				</defs>
+//- 				<path d="M201.974 52.054l-96.879 13.275c-7.52 1.042-13.873 6.052-16.618 13.105l-35.198 90.887c-2.702 6.959-1.452 14.924 3.267 20.861l61.852 77.831c4.718 5.936 12.184 8.94 19.632 7.954l96.879-13.274c7.522-1.043 13.873-6.053 16.618-13.105l35.199-90.887c2.702-6.959 1.452-14.925-3.266-20.861l-61.853-77.831c-4.719-5.937-12.185-8.941-19.633-7.955z" class="cls-1 hexagon" />
+//- 			</svg>
+//- 		</div>
+//- 		<div class="exclusive__img--3">
+//- 			<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 340 328">
+//- 				<defs>
+//- 					style.
+//- 						.cls-1 { filter: url(#drop-shadow-1); fill-rule: evenodd; }
+					
+//- 					<filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+//- 						<feOffset dy="20" in="SourceAlpha" />
+//- 						<feGaussianBlur stdDeviation="7.071" result="dropBlur" />
+//- 						<feFlood flood-color="#333" flood-opacity=".35" />
+//- 						<feComposite operator="in" in2="dropBlur" result="dropShadowComp" />
+//- 						<feComposite in="SourceGraphic" result="shadowed" />
+//- 					</filter>
+//- 				</defs>
+//- 				<path d="M201.974 52.054l-96.879 13.275c-7.52 1.042-13.873 6.052-16.618 13.105l-35.198 90.887c-2.702 6.959-1.452 14.924 3.267 20.861l61.852 77.831c4.718 5.936 12.184 8.94 19.632 7.954l96.879-13.274c7.522-1.043 13.873-6.053 16.618-13.105l35.199-90.887c2.702-6.959 1.452-14.925-3.266-20.861l-61.853-77.831c-4.719-5.937-12.185-8.941-19.633-7.955z" class="cls-1 hexagon" />
+//- 			</svg>
+//- 		</div>
+//- 		<div class="exclusive__img--8">
+//- 			<div class="img--8__w">
+//- 				<div class="img--8__img" style="background-image: url(#{myConfig.asset_url}/assets/web/images/icon/Landing/3-Rewards/3-Image-Voucher-Sogo.png)"></div>
+//- 			</div>
+//- 		</div>
+//- 		<div class="exclusive__img--9">
+//- 			<div class="img--9__w">
+//- 				<div class="img--9__img" style="background-image: url(#{myConfig.asset_url}/assets/web/images/icon/Landing/3-Rewards/3-Image-Kopi.png)"></div>
+//- 			</div>
+//- 		</div>
+//- 		<div class="exclusive__img--2">
+//- 			<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 340 328">
+//- 				<defs>
+//- 					style.
+//- 						.cls-1 { filter: url(#drop-shadow-1); fill-rule: evenodd; }
+					
+//- 					<filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+//- 						<feOffset dy="20" in="SourceAlpha" />
+//- 						<feGaussianBlur stdDeviation="7.071" result="dropBlur" />
+//- 						<feFlood flood-color="#9a52b8" flood-opacity=".71" />
+//- 						<feComposite operator="in" in2="dropBlur" result="dropShadowComp" />
+//- 						<feComposite in="SourceGraphic" result="shadowed" />
+//- 					</filter>
+//- 				</defs>
+//- 				<path d="M201.974 52.054l-96.879 13.275c-7.52 1.042-13.873 6.052-16.618 13.105l-35.198 90.887c-2.702 6.959-1.452 14.924 3.267 20.861l61.852 77.831c4.718 5.936 12.184 8.94 19.632 7.954l96.879-13.274c7.522-1.043 13.873-6.053 16.618-13.105l35.199-90.887c2.702-6.959 1.452-14.925-3.266-20.861l-61.853-77.831c-4.719-5.937-12.185-8.941-19.633-7.955z" class="cls-1 hexagon" />
+//- 			</svg>
+//- 		</div>
+
+//- 		<div class="landing-container">
+//- 			<div class="exclusive__img--1">
+//- 				<div class="img--1__w">
+//- 					<div class="img--1__img" style="background-image: url(#{myConfig.asset_url}/assets/web/images/icon/Landing/3-Rewards/3-Image-Handphone-Rewards.png)"></div>
+//- 				</div>
+//- 			</div>
+//- 			<div class="exclusive__text">
+//- 				<div class="exclusive__text__title">Exclusive rewards for you.</div>
+//- 				<div class="exclusive__text__desc">Kumpulkan poin yang bisa kamu tukarkan dengan rewards eksklusif dari berbagai brand ternama.</div>
+//- 				<div class="exclusive__text__brand">
+//- 					<div class="row">
+//- 						<div class="col-3 col-m-4">
+//- 							<div class="img-w">
+//- 								<img src="#{myConfig.asset_url}/assets/web/images/icon/Landing/3-Rewards/3-Logo-Djournal.png" class="rewards_brand one">
+//- 							</div>
+//- 						</div>
+//- 						<div class="col-3 col-m-4">
+//- 							<div class="img-w">
+//- 								<img src="#{myConfig.asset_url}/assets/web/images/icon/Landing/3-Rewards/3-Logo-Bobobobo.png" class="rewards_brand two">
+//- 							</div>
+//- 						</div>
+//- 						<div class="col-3 col-m-4">
+//- 							<div class="img-w">
+//- 								<img src="#{myConfig.asset_url}/assets/web/images/icon/Landing/3-Rewards/3-Logo-Sogo.png" class="rewards_brand three">
+//- 							</div>
+//- 						</div>
+//- 						<div class="col-3 col-m-4">
+//- 							<div class="img-w">
+//- 								<img src="#{myConfig.asset_url}/assets/web/images/icon/Landing/3-Rewards/3-Logo-Tanamera.png" class="rewards_brand four">
+//- 							</div>
+//- 						</div>
+//- 					</div>
+//- 				</div>
+//- 				<div class="exclusive__text__more"> ..and many more! </div>
+//- 			</div>
+//- 		</div>
+//- 	</section>
+
+//- 	<!-- Hype -->
+//- 	<section class="hype fh">
+//- 		<div class="hype__bg">
+//- 			<div class="hype__bg-w">
+//- 				<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 968 993.03">
+//- 					<path d="M940.2 308.344L640.255 24.289C616.929 2.27 583.516-5.509 552.851 3.941L158.088 126.264c-30.246 9.349-53.392 34.337-60.645 65.421L2.36 599.209c-7.253 31.085 2.494 63.532 25.441 85.458l299.945 284.06c23.323 22.019 56.736 29.798 87.404 20.348l394.763-122.329c30.245-9.344 53.389-34.331 60.642-65.416l95.084-407.524c7.252-31.085-2.492-63.528-25.439-85.462zm-517.831 453.59c-146.116-34.016-236.941-180.458-202.755-326.978C253.8 288.438 399.895 197.148 546.198 231.208c140.263 32.654 229.479 168.935 206.022 309.561-194.667-47.72-226.961-103.803-230.789-203.413-54.026 99.334-83.151 117.529-195.911 122.256 99.05 54.034 117.12 83.219 121.614 196.179 47.521-87.658 101.309-123.698 297.037-80.526-41.2 136.492-181.539 219.323-321.802 186.669z" class="bighexagon" />
+//- 				</svg>
+//- 			</div>
+//- 		</div>
+//- 		<div class="hype__img--9">
+//- 			<div class="img--9__w">
+//- 				<div class="img--9__img"></div>
+//- 			</div>
+//- 		</div>
+//- 		<div class="hype__img--8">
+//- 			<div class="img--8__w">
+//- 				<div class="img--8__img"></div>
+//- 			</div>
+//- 		</div>
+//- 		<div class="hype__img--2">
+//- 			<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 340 328">
+//- 				<defs>
+//- 					style.
+//- 						.cls-1 { filter: url(#drop-shadow-1); fill-rule: evenodd; }
+					
+//- 					<filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+//- 						<feOffset dy="20" in="SourceAlpha" />
+//- 						<feGaussianBlur stdDeviation="7.071" result="dropBlur" />
+//- 						<feFlood flood-color="#333" flood-opacity=".35" />
+//- 						<feComposite operator="in" in2="dropBlur" result="dropShadowComp" />
+//- 						<feComposite in="SourceGraphic" result="shadowed" />
+//- 					</filter>
+//- 				</defs>
+//- 				<path d="M201.974 52.054l-96.879 13.275c-7.52 1.042-13.873 6.052-16.618 13.105l-35.198 90.887c-2.702 6.959-1.452 14.924 3.267 20.861l61.852 77.831c4.718 5.936 12.184 8.94 19.632 7.954l96.879-13.274c7.522-1.043 13.873-6.053 16.618-13.105l35.199-90.887c2.702-6.959 1.452-14.925-3.266-20.861l-61.853-77.831c-4.719-5.937-12.185-8.941-19.633-7.955z" class="cls-1 hexagon" />
+//- 			</svg>
+//- 		</div>
+//- 		<div class="hype__img--3">
+//- 			<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 340 328">
+//- 				<defs>
+//- 					style.
+//- 						.cls-1 { filter: url(#drop-shadow-1); fill-rule: evenodd; }
+					
+//- 					<filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+//- 						<feOffset dy="20" in="SourceAlpha" />
+//- 						<feGaussianBlur stdDeviation="7.071" result="dropBlur" />
+//- 						<feFlood flood-color="#333" flood-opacity=".35" />
+//- 						<feComposite operator="in" in2="dropBlur" result="dropShadowComp" />
+//- 						<feComposite in="SourceGraphic" result="shadowed" />
+//- 					</filter>
+//- 				</defs>
+//- 				<path d="M201.974 52.054l-96.879 13.275c-7.52 1.042-13.873 6.052-16.618 13.105l-35.198 90.887c-2.702 6.959-1.452 14.924 3.267 20.861l61.852 77.831c4.718 5.936 12.184 8.94 19.632 7.954l96.879-13.274c7.522-1.043 13.873-6.053 16.618-13.105l35.199-90.887c2.702-6.959 1.452-14.925-3.266-20.861l-61.853-77.831c-4.719-5.937-12.185-8.941-19.633-7.955z" class="cls-1 hexagon" />
+//- 			</svg>
+//- 		</div>
+//- 		<div class="hype__img--4">
+//- 			<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 340 328">
+//- 				<defs>
+//- 					style.
+//- 						.cls-1 { filter: url(#drop-shadow-1); fill-rule: evenodd; }
+					
+//- 					<filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+//- 						<feOffset dy="20" in="SourceAlpha" />
+//- 						<feGaussianBlur stdDeviation="7.071" result="dropBlur" />
+//- 						<feFlood flood-color="#333" flood-opacity=".35" />
+//- 						<feComposite operator="in" in2="dropBlur" result="dropShadowComp" />
+//- 						<feComposite in="SourceGraphic" result="shadowed" />
+//- 					</filter>
+//- 				</defs>
+//- 				<path d="M201.974 52.054l-96.879 13.275c-7.52 1.042-13.873 6.052-16.618 13.105l-35.198 90.887c-2.702 6.959-1.452 14.924 3.267 20.861l61.852 77.831c4.718 5.936 12.184 8.94 19.632 7.954l96.879-13.274c7.522-1.043 13.873-6.053 16.618-13.105l35.199-90.887c2.702-6.959 1.452-14.925-3.266-20.861l-61.853-77.831c-4.719-5.937-12.185-8.941-19.633-7.955z" class="cls-1 hexagon" />
+//- 			</svg>
+//- 		</div>
+//- 		<div class="hype__img--5">
+//- 			<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 340 328">
+//- 				<defs>
+//- 					style.
+//- 						.cls-1 { filter: url(#drop-shadow-1); fill-rule: evenodd; }
+					
+//- 					<filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+//- 						<feOffset dy="20" in="SourceAlpha" />
+//- 						<feGaussianBlur stdDeviation="7.071" result="dropBlur" />
+//- 						<feFlood flood-color="#333" flood-opacity=".35" />
+//- 						<feComposite operator="in" in2="dropBlur" result="dropShadowComp" />
+//- 						<feComposite in="SourceGraphic" result="shadowed" />
+//- 					</filter>
+//- 				</defs>
+//- 				<path d="M201.974 52.054l-96.879 13.275c-7.52 1.042-13.873 6.052-16.618 13.105l-35.198 90.887c-2.702 6.959-1.452 14.924 3.267 20.861l61.852 77.831c4.718 5.936 12.184 8.94 19.632 7.954l96.879-13.274c7.522-1.043 13.873-6.053 16.618-13.105l35.199-90.887c2.702-6.959 1.452-14.925-3.266-20.861l-61.853-77.831c-4.719-5.937-12.185-8.941-19.633-7.955z" class="cls-1 hexagon" />
+//- 			</svg>
+//- 		</div>
+//- 		<div class="hype__img--6">
+//- 			<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 166 163.06">
+//- 				<defs>
+//- 					style.
+//- 						.cls-1 { fill-rule: evenodd; }
+					
+//- 				</defs>
+//- 				<path d="M133.43 15.551L65.499.383C60.223-.786 54.691.951 51.028 4.927L3.94 56.206C.33 60.131-.911 65.696.683 70.778l20.901 66.633c1.594 5.083 5.781 8.909 10.995 10.097l67.931 15.168c5.276 1.169 10.808-.568 14.47-4.544l47.089-51.279c3.609-3.925 4.851-9.489 3.257-14.572l-20.901-66.633c-1.594-5.082-5.781-8.908-10.995-10.097z" class="cls-1 hexagon" />
+//- 			</svg>
+//- 		</div>
+//- 		<div class="hype__img--7">
+//- 			<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 166 163.06">
+//- 				<defs>
+//- 					style.
+//- 						.cls-1 { fill-rule: evenodd; }
+					
+//- 				</defs>
+//- 				<path d="M133.43 15.551L65.499.383C60.223-.786 54.691.951 51.028 4.927L3.94 56.206C.33 60.131-.911 65.696.683 70.778l20.901 66.633c1.594 5.083 5.781 8.909 10.995 10.097l67.931 15.168c5.276 1.169 10.808-.568 14.47-4.544l47.089-51.279c3.609-3.925 4.851-9.489 3.257-14.572l-20.901-66.633c-1.594-5.082-5.781-8.908-10.995-10.097z" class="cls-1 hexagon" />
+//- 			</svg>
+//- 		</div>
+//- 		<div class="hype__img--10">
+//- 			<div class="img--10__w">
+//- 				<div class="img--10__img" style="background-image: url(#{myConfig.asset_url}/assets/web/images/icon/Landing/4-News/4-Image-Megaphone.png)"></div>
+//- 			</div>
+//- 		</div>
+//- 		<div class="hype__img--11">
+//- 			<div class="img--11__w">
+//- 				<div class="img--11__img" style="background-image: url(#{myConfig.asset_url}/assets/web/images/icon/Landing/4-News/4-Image-TV.png)"></div>
+//- 			</div>
+//- 		</div>
+
+//- 		<div class="landing-container">
+//- 			<div class="hype__img--1">
+//- 				<div class="img--1__w">
+//- 					<div class="img--1__img" style="background-image: url(#{myConfig.asset_url}/assets/web/images/icon/Landing/4-News/4-Image-Handphone-News.png)"></div>
+//- 				</div>
+//- 			</div>
+//- 			<div class="hype__text">
+//- 				<div class="hype__text__title">Trending news & hype for you.</div>
+//- 				<div class="hype__text__desc">Jadi orang yang paling update di antara sahabat-sahabatmu dengan pilihan ragam konten yang kamu suka!</div>
+//- 			</div>
+//- 		</div>
+//- 	</section>
+
+//- 	<section class="subscribe fh" id="subscribe">
+//- 		<div class="subscribe__img--1">
+//- 			<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 340 328">
+//- 				<defs>
+//- 					style.
+//- 						.cls-1 { filter: url(#drop-shadow-1); fill-rule: evenodd; }
+					
+//- 					<filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+//- 						<feOffset dy="20" in="SourceAlpha" />
+//- 						<feGaussianBlur stdDeviation="7.071" result="dropBlur" />
+//- 						<feFlood flood-color="#333" flood-opacity=".35" />
+//- 						<feComposite operator="in" in2="dropBlur" result="dropShadowComp" />
+//- 						<feComposite in="SourceGraphic" result="shadowed" />
+//- 					</filter>
+//- 				</defs>
+//- 				<path d="M201.974 52.054l-96.879 13.275c-7.52 1.042-13.873 6.052-16.618 13.105l-35.198 90.887c-2.702 6.959-1.452 14.924 3.267 20.861l61.852 77.831c4.718 5.936 12.184 8.94 19.632 7.954l96.879-13.274c7.522-1.043 13.873-6.053 16.618-13.105l35.199-90.887c2.702-6.959 1.452-14.925-3.266-20.861l-61.853-77.831c-4.719-5.937-12.185-8.941-19.633-7.955z" class="cls-1 hexagon" />
+//- 			</svg>
+//- 		</div>
+//- 		<div class="subscribe__img--2">
+//- 			<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 166 163.06">
+//- 				<defs>
+//- 					style.
+//- 						.cls-1 { fill-rule: evenodd; }
+					
+//- 				</defs>
+//- 				<path d="M133.43 15.551L65.499.383C60.223-.786 54.691.951 51.028 4.927L3.94 56.206C.33 60.131-.911 65.696.683 70.778l20.901 66.633c1.594 5.083 5.781 8.909 10.995 10.097l67.931 15.168c5.276 1.169 10.808-.568 14.47-4.544l47.089-51.279c3.609-3.925 4.851-9.489 3.257-14.572l-20.901-66.633c-1.594-5.082-5.781-8.908-10.995-10.097z" class="cls-1 hexagon" />
+//- 			</svg>
+//- 		</div>
+
+//- 		<div class="landing-container">
+//- 			<form action="/web/subscribe/save" class="subscribe__form wknd_form ajax" error="afterError(response)" redir-url="/web" novalidate>
+//- 				<div class="subscribe__form-w">
+//- 					<div class="subscribe__img--4">
+//- 						<div class="img--4__w">
+//- 							<div class="img--4__img"></div>
+//- 						</div>
+//- 					</div>
+//- 					<div class="subscribe__img--5">
+//- 						<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 340 328">
+//- 							<defs>
+//- 								style.
+//- 									.cls-1 { filter: url(#drop-shadow-1); fill-rule: evenodd; }
+								
+//- 								<filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+//- 									<feOffset dy="20" in="SourceAlpha" />
+//- 									<feGaussianBlur stdDeviation="7.071" result="dropBlur" />
+//- 									<feFlood flood-color="#333" flood-opacity=".35" />
+//- 									<feComposite operator="in" in2="dropBlur" result="dropShadowComp" />
+//- 									<feComposite in="SourceGraphic" result="shadowed" />
+//- 								</filter>
+//- 							</defs>
+//- 							<path d="M201.974 52.054l-96.879 13.275c-7.52 1.042-13.873 6.052-16.618 13.105l-35.198 90.887c-2.702 6.959-1.452 14.924 3.267 20.861l61.852 77.831c4.718 5.936 12.184 8.94 19.632 7.954l96.879-13.274c7.522-1.043 13.873-6.053 16.618-13.105l35.199-90.887c2.702-6.959 1.452-14.925-3.266-20.861l-61.853-77.831c-4.719-5.937-12.185-8.941-19.633-7.955z" class="cls-1 hexagon" />
+//- 						</svg>
+//- 					</div>
+//- 					<div class="subscribe__img--6">
+//- 						<div class="img--6__w">
+//- 							<div class="img--6__img" style="background-image: url(#{myConfig.asset_url}/assets/web/images/icon/Landing/5-Subscribe/5-Image-Envelope.png)"></div>
+//- 						</div>
+//- 					</div>
+//- 					<div class="subscribe__form__title">Interested?</div>
+//- 					<div class="subscribe__form__subtitle">Subscribe to get notified.</div>
+//- 					<div class="subscribe__form__input">
+//- 						<div class="err-msg hide"></div>
+//- 						<div class="input-group">
+//- 							<input type="text" name="name" id="name" placeholder="Full Name" autocomplete="off" required/>
+//- 						</div>
+//- 						<div class="input-group">
+//- 							<input type="email" name="email" id="email" data-role="email" placeholder="Your Email" autocomplete="off" required/>
+//- 						</div>
+//- 						<div class="input-group">
+//- 							<input class="wknd-checkbox" id="agree" data-role="agreement" type="checkbox" value="1" required>
+//- 							<label for="agree">I agree to the <a href="" id="tnc">Terms & Conditions</a>.</label>
+//- 						</div>
+//- 					</div>
+//- 					<input type="hidden" id="wknd_csrf" name="#{csrf_token_name}" value="#{csrf_token}" />
+//- 					<button type="submit" id="subscribe" class="subscribe__form__btn">Subscribe</button>
+//- 				</div>
+//- 			</form>
+//- 		</div>
+
+//- 		<div class="subscribe__img--3">
+//- 			<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 340 328">
+//- 				<defs>
+//- 					style.
+//- 						.cls-1 { filter: url(#drop-shadow-1); fill-rule: evenodd; 	}
+					
+//- 					<filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+//- 						<feOffset dy="20" in="SourceAlpha" />
+//- 						<feGaussianBlur stdDeviation="7.071" result="dropBlur" />
+//- 						<feFlood flood-color="#333" flood-opacity=".35" />
+//- 						<feComposite operator="in" in2="dropBlur" result="dropShadowComp" />
+//- 						<feComposite in="SourceGraphic" result="shadowed" />
+//- 					</filter>
+//- 				</defs>
+//- 				<path d="M201.974 52.054l-96.879 13.275c-7.52 1.042-13.873 6.052-16.618 13.105l-35.198 90.887c-2.702 6.959-1.452 14.924 3.267 20.861l61.852 77.831c4.718 5.936 12.184 8.94 19.632 7.954l96.879-13.274c7.522-1.043 13.873-6.053 16.618-13.105l35.199-90.887c2.702-6.959 1.452-14.925-3.266-20.861l-61.853-77.831c-4.719-5.937-12.185-8.941-19.633-7.955z" class="cls-1 hexagon" />
+//- 			</svg>
+//- 		</div>
+//- 	</section>
+
+//- 	<!-- Footer -->
+//- 	<div class="footer landing">
+//- 		<div class="footer__nav">
+//- 			<ul>
+//- 				<li><a href="/web/faq">FAQ & Help</a></li>
+//- 				<li><a href="/web/tnc">Terms & Conditions</a></li>
+//- 				<li><a href="/web/contact">Contact Us</a></li>
+//- 			</ul>
+//- 		</div>
+//- 		<div class="footer__copy">&copy; #{new Date().getFullYear()} #{myConfig.company_name}. All rights reserved.</div>
+//- 	</div>
+
+//- 	<div id="tncModal" class="modal">
+//- 		<div class="modal-item">
+//- 		<div class="close"></div>
+//- 		<div class="modal-wrapper">
+//- 			<div class="modal-title" id="tncTitle">Terms and Conditions</div>
+//- 			<div class="modal-scrollable">
+//- 				<div class="modal-content" id="tncContent">
+//- 					<div>
+//- 						<p><span>Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae.</span> <span>Morbi odio eros, volutpat ut pharetra vitae, lobortis sed nibh.</span> <span>Tu quoque, Brute, fili mi, nihil timor populi, nihil!</span></p><p><span>Curabitur blandit tempus ardua ridiculus sed magna.</span> <span>Cras mattis iudicium purus sit amet fermentum.</span> <span>Quae vero auctorem tractata ab fiducia dicuntur.</span> <span>Quisque ut dolor gravida, placerat libero vel, euismod.</span> <span>At nos hinc posthac, sitientis piros Afros.</span></p><p><span>Ullamco laboris nisi ut aliquid ex ea commodi consequat.</span> <span>Cum sociis natoque penatibus et magnis dis parturient.</span> <span>Quam diu etiam furor iste tuus nos eludet?</span> <span>Cum ceteris in veneratione tui montes, nascetur mus.</span> <span>Pellentesque habitant morbi tristique senectus et netus.</span></p><p><span>Ab illo tempore, ab est sed immemorabili.</span> <span>Quo usque tandem abutere, Catilina, patientia nostra?</span> <span>Quam temere in vitiis, legem sancimus haerentia.</span> <span>Etiam habebis sem dicantur magna mollis euismod.</span> <span>Morbi fringilla convallis sapien, id pulvinar odio volutpat.</span></p><p><span>Vivamus sagittis lacus vel augue laoreet rutrum faucibus.</span> <span>Unam incolunt Belgae, aliam Aquitani, tertiam.</span> <span>Petierunt uti sibi concilium totius Galliae in diem certam indicere.</span> <span>Non equidem invideo, miror magis posuere velit aliquet.</span> <span>Tityre, tu patulae recubans sub tegmine fagi dolor.</span> <span>Quisque placerat facilisis egestas cillum dolore.</span></p>
+//- 					</div>
+//- 				</div>
+//- 			</div>
+//- 		</div>
+//- 		</div>
+//- 	</div>
+
+//- 	<script src="#{myConfig.asset_url}/assets/web/js/landing.js?v=#{myConfig.asset_version}"></script>		
+extends layout_landing
+block content_web
+
+    <main class="text-light">
+        <div class="bg">
+            <div class="bg--1"></div>
+            <div class="bg--2"></div>
+
+            <!-- Header -->
+            <header class="header-landing">
+            <div class="header__logo">
+                <img src="#{myConfig.asset_url}/assets/img/Logo-wknd-white.svg">
+            </div>
+            <div class="header__nav">
+                //- <ul>
+                //- <li><a href="/web/">Features</a></li>
+                //- <li><a href="/web/">Notify Me</a></li>
+                //- </ul>
+            </div>
+            </header>
+
+            <section class="fzf">
+            <div class="fzf__content">
+                <div class="fzf__title">Weekend, Inc.</div>
+            </div>
+            <div class="fzf__img--1">
+                <div class="img--1__w">
+                <div class="img--1__img"></div>
+                </div>
+            </div>
+            <div class="fzf__img--2">
+                <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 340 328"><defs><style>.cls-1 { filter: url(#drop-shadow-1); fill-rule: evenodd; }</style><filter id="drop-shadow-1" filterUnits="userSpaceOnUse"><feOffset dy="20" in="SourceAlpha"/><feGaussianBlur stdDeviation="7.071" result="dropBlur"/><feFlood flood-color="#333" flood-opacity=".35"/><feComposite operator="in" in2="dropBlur" result="dropShadowComp"/><feComposite in="SourceGraphic" result="shadowed"/></filter></defs><path d="M201.974 52.054l-96.879 13.275c-7.52 1.042-13.873 6.052-16.618 13.105l-35.198 90.887c-2.702 6.959-1.452 14.924 3.267 20.861l61.852 77.831c4.718 5.936 12.184 8.94 19.632 7.954l96.879-13.274c7.522-1.043 13.873-6.053 16.618-13.105l35.199-90.887c2.702-6.959 1.452-14.925-3.266-20.861l-61.853-77.831c-4.719-5.937-12.185-8.941-19.633-7.955z" class="cls-1 hexagon"/></svg>
+            </div>
+            <div class="fzf__img--3">
+                <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 340 328"><defs><style>.cls-1 { filter: url(#drop-shadow-1); fill-rule: evenodd; }</style><filter id="drop-shadow-1" filterUnits="userSpaceOnUse"><feOffset dy="20" in="SourceAlpha"/><feGaussianBlur stdDeviation="7.071" result="dropBlur"/><feFlood flood-color="#333" flood-opacity=".35"/><feComposite operator="in" in2="dropBlur" result="dropShadowComp"/><feComposite in="SourceGraphic" result="shadowed"/></filter></defs><path d="M201.974 52.054l-96.879 13.275c-7.52 1.042-13.873 6.052-16.618 13.105l-35.198 90.887c-2.702 6.959-1.452 14.924 3.267 20.861l61.852 77.831c4.718 5.936 12.184 8.94 19.632 7.954l96.879-13.274c7.522-1.043 13.873-6.053 16.618-13.105l35.199-90.887c2.702-6.959 1.452-14.925-3.266-20.861l-61.853-77.831c-4.719-5.937-12.185-8.941-19.633-7.955z" class="cls-1 hexagon"/></svg>
+            </div>
+            <div class="fzf__img--4">
+                <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 340 328"><defs><style>.cls-1 { filter: url(#drop-shadow-1); fill-rule: evenodd; }</style><filter id="drop-shadow-1" filterUnits="userSpaceOnUse"><feOffset dy="20" in="SourceAlpha"/><feGaussianBlur stdDeviation="7.071" result="dropBlur"/><feFlood flood-color="#333" flood-opacity=".35"/><feComposite operator="in" in2="dropBlur" result="dropShadowComp"/><feComposite in="SourceGraphic" result="shadowed"/></filter></defs><path d="M201.974 52.054l-96.879 13.275c-7.52 1.042-13.873 6.052-16.618 13.105l-35.198 90.887c-2.702 6.959-1.452 14.924 3.267 20.861l61.852 77.831c4.718 5.936 12.184 8.94 19.632 7.954l96.879-13.274c7.522-1.043 13.873-6.053 16.618-13.105l35.199-90.887c2.702-6.959 1.452-14.925-3.266-20.861l-61.853-77.831c-4.719-5.937-12.185-8.941-19.633-7.955z" class="cls-1 hexagon"/></svg>
+            </div>
+            </section>
+
+            <!-- Footer -->
+            <div class="footer landing">
+                <div class="footer__nav">
+                    //- <ul>
+                    //- <li><a href="/web/faq">FAQ & Help</a></li>
+                    //- <li><a href="/web/tnc">Terms & Conditions</a></li>
+                    //- <li><a href="/web/contact">Contact Us</a></li>
+                    //- </ul>
+                </div>
+                <div class="footer__copy">&copy; #{new Date().getFullYear()} #{myConfig.company_name}. All rights reserved.</div>
+            </div>
+        </div>
+    </main>

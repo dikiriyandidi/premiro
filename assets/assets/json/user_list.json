@@ -1,0 +1,36 @@
+{
+	"user_list": {
+		"spice_id": 32893120, 
+		"name": "Budi Suherman", 
+		"gender": "Male", 
+		"birthdate": "23 Juni 1980", 
+		"city": "Jakarta",
+		"valid_email": 1, 
+		"valid_phone": 0, 
+		"registration_date": "13 Juni 2017 10:00", 
+		"registration_from": "GAP", 
+		"point": 1234, 
+		"tags": [
+			{
+				"name": "Photography", 
+				"img": "https://ak3.picdn.net/shutterstock/videos/3810683/thumb/1.jpg"
+			}, 
+			{
+				"name": "Music", 
+				"img": "https://ak3.picdn.net/shutterstock/videos/3810683/thumb/1.jpg"
+			}, 
+			{
+				"name": "Vision", 
+				"img": "https://ak3.picdn.net/shutterstock/videos/3810683/thumb/1.jpg"
+			}, 
+			{
+				"name": "Automotive", 
+				"img": "https://ak3.picdn.net/shutterstock/videos/3810683/thumb/1.jpg"
+			}, 
+			{
+				"name": "EDM", 
+				"img": "https://ak3.picdn.net/shutterstock/videos/3810683/thumb/1.jpg"
+			}
+		]
+	}
+}

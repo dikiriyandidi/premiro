@@ -1,0 +1,130 @@
+extends layout
+
+block content
+    <ol class="breadcrumb">
+        <li>Main Navigation</li>
+        <li>Article</li>
+        if(data.id != undefined)
+            <li>#{data.title}</li>
+        else
+            <li>New</li>
+        <li class="breadcrumb__back"><a href="/cms/article">Go Back</a></li>
+    </ol>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-wknd">
+                    <div class="panel-heading">
+                        if(data.id != undefined)
+                            <div class="panel-title">Detail Article</div>
+                        else
+                            <div class="panel-title">New Article</div>
+                    </div>
+                    <div class="panel-body">
+                        <form id="form_article" class="ajax parsley-validate" action="/cms/article/manage" redir-url="/cms/article">
+                            <input type="hidden" id="id" name="id" value="#{data.id}" />
+                            <input type="hidden" id="wknd_csrf" name="#{csrf_token_name}" value="#{csrf_token}" />
+
+                            <div class="form-group">
+                                <label for="title" class="control-label">Title</label>
+                                <input type="text" name="title" class="form-control" id="title" value="#{data.title}">
+                            </div>
+                            <div class="form-group">
+                                <label for="short_desc" class="control-label">Preview Content</label>                               
+                                <div id="short_desc" class="quill-editor" data-copyto="#wysiwyg_short_desc">#{data.preview_content}</div>
+                                <input type="hidden" id="wysiwyg_short_desc" name="preview_content" value="#{data.preview_content}">
+                            </div>
+                            <div class="form-group">
+                                <label for="desc" class="control-label">Content</label>
+                                <div id="editor" class="quill-editor" data-copyto="#wysiwyg_desc">#{data.content}</div>
+                                //- <div data-role="editor-toolbar_2" data-target="#desc" class="btn-toolbar btn-editor">
+                                //-     include wysiwyg.pug
+                                //- </div>
+                                //- <div id="desc" data-copyto="#wysiwyg_desc" style="overflow:scroll; height:250px;max-height:250px" class="form-control wysiwyg mt-lg">#{data.content}</div>
+                                //- <input type="hidden" id="wysiwyg_desc" data-target="#wysiwyg_desc" name="content" value="#{data.content}">
+                                <input type="hidden" id="wysiwyg_desc" name="content" value="#{data.content}">
+                            </div>
+                            <div class="form-group">
+                                <label for="type" class="control-label">Type</label>
+                                <div>
+                                    <select name="type" type="text" class="form-control" id="type" style="width:100%">
+                                        option(value="image", selected=(data.type == "image")) Image
+                                        option(value="video", selected=(data.type == "video")) Video
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group image-wrapper">
+                                <label for="featured_image" class="control-label">Featured Image</label>
+                                <div>
+                                    if data.featured_image !== undefined && data.featured_image !== ''
+                                        <a href="#{data.featured_image}" title="click to enlarge" target="_blank"><img src="#{data.dataValues.featured_image_th}" class="preview-image"/></a>
+                                </div>
+                                <div>
+                                    <input type="file" name="featured_image" id="featured_image">
+                                    <label><span>Choose a file&hellip;</span></label>
+                                    <div style="color:gray;font-size:smaller;font-style: italic;">(Type: jpg, png, gif, jpeg &amp; Dimension: 380 x 240)</div>
+                                </div>
+                            </div>
+                            <div class="form-group video-wrapper">
+                                <label for="video_file" class="control-label">Video</label>
+                                <div>
+                                    if data.video_file !== undefined && data.video_file !== ''
+                                        <video controls style="max-height:400px;">
+                                            <source src="#{data.video_file}" type="video/mp4">
+                                        </video>
+                                </div>
+                                <div>
+                                    <input type="file" name="video_file" id="video_file">
+                                    <label><span>Choose a file&hellip;</span></label>
+                                    <div style="color:gray;font-size:smaller;font-style: italic;">(Type: mp4 &amp; Max file size: 200mb)</div>
+                                </div>
+                            </div>
+                            <div class="form-group video-wrapper">
+                                <label for="video_cover" class="control-label">Video Cover</label>
+                                <div>
+                                    if data.video_cover !== undefined && data.video_cover !== ''
+                                        <a href="#{data.video_cover}" title="click to enlarge" target="_blank" width="100px"><img src="#{data.video_cover}" width="100px" class="preview-image"/></a>
+                                </div>
+                                <div>
+                                    <input type="file" name="video_cover" id="video_cover">
+                                    <label><span>Choose a file&hellip;</span></label>
+                                    <div style="color:gray;font-size:smaller;font-style: italic;">(Type: jpg, png, gif, jpeg)</div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="is_highlight" class="control-label">Highlight</label>
+                                <div>
+                                    <select name="is_highlight" type="text" class="form-control" id="is_highlight" style="width:100%">
+                                        option(value="No", selected=(data.is_highlight == "No")) No
+                                        option(value="Yes", selected=(data.is_highlight == "Yes")) Yes
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="publishdate" class="control-label">Publish Date</label>
+                                <input type="text" name="publishdate" class="form-control datetimepicker" id="publishdate" value="#{data.publishdate}">
+                            </div>
+                            <div class="form-group">
+                                <label for="status" class="control-label">Status</label>
+                                <div>
+                                    <select name="status" type="text" class="form-control" id="status" style="width:100%">
+                                        option(value="Unpublished", selected=(data.status == "Unpublished")) Unpublished
+                                        option(value="Published", selected=(data.status == "Published")) Published
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="panel-footer">
+                        <div class="clearfix">
+                            <div class="pull-right">
+                                <button id="fsubmit" type="button" class="btn btn-wknd">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="#{myConfig.asset_url}/assets/js/views/article_form.js?v=#{myConfig.asset_version}"></script>

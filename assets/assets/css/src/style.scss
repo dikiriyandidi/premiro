@@ -1,0 +1,52 @@
+@import "compass/css3";
+@import "includes/variables";
+@import "includes/dev-mixin";
+@import "includes/type";
+@import "includes/grid";
+@import "includes/utilities";
+
+// Vendors
+@import "includes/vendor/font-awesome.min";
+@import "includes/vendor/simple-line-icons";
+@import "includes/vendor/animate.min";
+@import "includes/vendor/whirl";
+@import "includes/vendor/sweetalert";
+@import "includes/vendor/jquery.fileupload";
+
+// Spinner
+@import "includes/vendor/loaders";
+
+// Datatables
+@import "includes/vendor/datatables/dataTables.colVis";
+@import "includes/vendor/datatables/dataTables.bootstrap";
+@import "includes/vendor/datatables/dataTables.fontAwesome";
+
+// Select2
+@import "includes/vendor/select2";
+@import "includes/vendor/select2-bootstrap";
+
+// Datetimepicker
+@import "includes/vendor/bootstrap-datetimepicker.min";
+
+// Bootstrap
+@import "includes/vendor/bootstrap";
+
+// Apps
+@import "includes/app";
+
+
+/* ==========================================================================
+   Weekendinc's custom styles
+   ========================================================================== */
+
+// Theme
+@import "includes/theme";
+// Base
+@import "includes/button";
+// Main
+@import "includes/main";
+// Pages
+@import "includes/pages/home";
+
+
+@import "includes/print", "includes/degradation";

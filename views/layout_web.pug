@@ -1,0 +1,106 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+if(og != undefined)
+  <title>Weekend | #{og.title}</title>
+  <meta name="description" content="#{og.description}">
+if(og == undefined)
+  <title>Weekend!</title>
+  <meta name="description" content="Nec dubitamus multa iter quae et nos invenerat.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Favicon -->
+<link rel="apple-touch-icon-precomposed" href="#{myConfig.asset_url}/assets/web/images/favicon/favicon-152.png">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="#{myConfig.asset_url}/assets/web/images/favicon/favicon-152.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="#{myConfig.asset_url}/assets/web/images/favicon/favicon-144.png">
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="#{myConfig.asset_url}/assets/web/images/favicon/favicon-120.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="#{myConfig.asset_url}/assets/web/images/favicon/favicon-114.png">
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="#{myConfig.asset_url}/assets/web/images/favicon/favicon-76.png">
+<link rel="apple-touch-icon-precomposed" href="#{myConfig.asset_url}/assets/web/images/favicon/favicon-57.png">
+<meta name="msapplication-TileColor" content="#colorHere"> <!-- put hex color here -->
+<meta name="msapplication-TileImage" content="#{myConfig.asset_url}/assets/web/images/favicon/favicon-144.png">
+<link rel="icon" sizes="16x16 24x24 32x32 48x48 64x64" href="#{myConfig.asset_url}/assets/web/images/favicon/favicon.ico">
+<link rel="mask-icon" href="#{myConfig.asset_url}/assets/web/images/favicon/favicon.svg" color="#colorHere"> <!-- put hex color here -->
+
+<!-- Configure the font used -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Rubik:400,500" rel="stylesheet">
+
+<!-- Core -->
+<link rel="stylesheet" href="#{myConfig.asset_url}/assets/web/css/style.css?v=#{myConfig.asset_version}">
+
+if(og != undefined)
+  <meta property="og:url" content="#{og.url}" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="#{og.title}" />
+  <meta property="og:description" content="#{og.description}" />
+  <meta property="og:image" content="#{og.image}" />
+if(og == undefined)
+  <meta property="og:url" content="#{myConfig.base_url}" />
+  <meta property="og:type" content="website" />
+<meta property="og:title" content="wknd!" />
+  <meta property="og:description" content="Description wknd!" />
+  <meta property="og:image" content="#{myConfig.asset_url}/assets/web/images/icon/Header-Logo-Horizontal.svg" />
+
+<script src="#{myConfig.asset_url}/assets/web/js/modernizr-3.6.0.min.js?v=#{myConfig.asset_version}"></script>
+<script src="#{myConfig.asset_url}/assets/web/js/fontfaceobserver.min.js?v=#{myConfig.asset_version}"></script>
+<script src="#{myConfig.asset_url}/assets/web/js/plugins.js?v=#{myConfig.asset_version}"></script>
+<script src="#{myConfig.asset_url}/assets/web/js/main.js?v=#{myConfig.asset_version}"></script>
+</head>
+
+<body>
+<!--[if lt IE 8]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+    <!-- Header -->
+    <header class="header-listicle">
+      <div class="header-listicle__gradient--1"></div>
+      <div class="header-listicle__gradient--2"></div>
+      <a href="" class="header-logo"></a>
+    </header>
+
+
+  
+    block content_web
+    
+
+<!-- Footer -->
+
+<!--<footer class="footer-listicle">
+  <div class="footer__nav">
+    <ul>
+      <li><a href="">FAQ & Help</a></li>
+      <li><a href="">Terms & Conditions</a></li>
+      <li><a href="">Contact Us</a></li>
+    </ul>
+  </div>
+  <div class="footer__copy">
+    2017 wknd. All rights reserved.
+  </div>
+</footer>-->
+
+    <!-- Plugins -->
+    <script src="#{myConfig.asset_url}/assets/web/js/swiper.min.js?v=#{myConfig.asset_version}"></script>
+    script.
+        var swiper = new Swiper('.swiper-container', {
+          nextButton: '.swiper-button-next',
+          prevButton: '.swiper-button-prev',
+          loop: false,
+          speed: 500, 
+          slidesPerView: 3, 
+          spaceBetween: 24, 
+          breakpoints: {
+            700: {
+              slidesPerView: 3, 
+              spaceBetween: 8, 
+            }, 
+            640: {
+              slidesPerView: 'auto'
+            }
+          }
+        });
+</body>
+</html>

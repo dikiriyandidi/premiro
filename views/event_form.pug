@@ -1,0 +1,133 @@
+extends layout
+
+block content
+    <ol class="breadcrumb">
+        <li>Main Navigation</li>
+        <li>Event</li>
+        <li>Event List</li>
+        if(data.id != undefined)
+            <li>#{data.title}</li>
+        else
+            <li>New</li>
+        <li class="breadcrumb__back"><a href="/cms/event/event_list">Go Back</a></li>
+    </ol>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-wknd">
+                    <div class="panel-heading">
+                        if(data.id != undefined)
+                            <div class="panel-title">Detail Event</div>
+                        else
+                            <div class="panel-title">New Event</div>
+                    </div>
+                    <div class="panel-body">
+                        <form id="form_event" class="ajax parsley-validate" action="/cms/event/event_list/manage" redir-url="/cms/event/event_list">
+                            <input type="hidden" id="id" name="id" value="#{data.id}" />
+                            <input type="hidden" id="string_id" name="string_id" value="#{data.string_id}" />
+                            <input type="hidden" id="wknd_csrf" name="#{csrf_token_name}" value="#{csrf_token}" />
+                            <div class="form-group">
+                                <label for="title" class="control-label">Title</label>
+                                <input type="text" name="title" class="form-control" id="title" value="#{data.title}">
+                            </div>
+                            <div class="form-group">
+                                <label for="city_id" class="control-label">City</label>
+                                <div>
+                                    <select name="city_id" type="text" class="form-control select2" id="city_id" style="width:100%">
+                                        if(data && data.event_city)
+                                            option(value=data.city_id, selected=true) #{data.event_city.city_name}
+                                            
+                                        for i in cities
+                                            if(data && i.id !=  data.city_id)
+                                                option(value=i.id) #{i.city_name}
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="venue" class="control-label">Venue</label>
+                                <input type="text" name="venue" class="form-control" id="venue" value="#{data.venue}">
+                            </div>
+                            <div class="form-group">
+                                <label for="address" class="control-label">Address</label>
+                                <textarea name="address" class="form-control textarea" id="address">#{data.address}</textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="desc" class="control-label">Description</label>                               
+                                <div id="desc" class="quill-editor" data-copyto="#wysiwyg_desc">#{data.event_description}</div>
+                                <input type="hidden" id="wysiwyg_desc" name="description" value="#{data.event_description}">
+                            </div>
+                            <div class="form-group image-wrapper">
+                                <label for="image" class="control-label">Featured Image</label>
+                                <div>
+                                    if data.featured_image !== undefined && data.featured_image !== ''
+                                        <a href="#{data.featured_image}" title="click to enlarge" target="_blank"><img src="#{data.dataValues.featured_image_th}" class="preview-image"/></a>
+                                </div>
+                                <div>
+                                    <input type="file" name="image" id="image">
+                                    <label><span>Choose a file&hellip;</span></label>
+                                    <div style="color:gray;font-size:smaller;font-style: italic;">(Type: jpg, png, gif, jpeg)</div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Featured Event</label>
+                                <div>
+                                    input(type="radio", name="is_featured", id="is_featured_yes", value="TRUE", checked=(data.is_featured == 'TRUE'))
+                                    <label for="is_featured_yes">&nbsp;<strong>Yes </strong>&nbsp;&nbsp;&nbsp;</label>
+                                    input(type="radio", name="is_featured", id="is_featured_no", value="FALSE", checked=(data.is_featured == 'FALSE'))
+                                    <label for="is_featured_no">&nbsp;<strong>No </strong>&nbsp;&nbsp;&nbsp;</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <label for="startdate" class="control-label">Start Date</label>
+                                        <input type="text" name="startdate" class="form-control datepicker" id="startdate" value="#{data.startdate}">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="starttime" class="control-label">Start Time</label>
+                                        <input type="text" name="starttime" class="form-control timepicker" id="starttime" value="#{data.dataValues.starttime}">
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="form-group">
+                                <label for="enddate" class="control-label"></label>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <label for="enddate" class="control-label">End Date</label> 
+                                        <input type="text" name="enddate" class="form-control datepicker" id="enddate" value="#{data.enddate}">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="endtime" class="control-label">End Time</label> 
+                                        <input type="text" name="endtime" class="form-control timepicker" id="endtime" value="#{data.dataValues.endtime}">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="publish_date" class="control-label">Publish Date</label>
+                                <input type="text" name="publish_date" class="form-control datetimepicker" id="publish_date" value="#{data.publish_date}">
+                            </div>
+                            <div class="form-group">
+                                <label for="role" class="control-label">Status</label>
+                                <div>
+                                    <select name="status" type="text" class="form-control" id="status" style="width:100%">
+                                        option(value="Unpublished", selected=(data.status == "Unpublished")) Unpublished
+                                        option(value="Published", selected=(data.status == "Published")) Published
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="panel-footer">
+                        <div class="clearfix">
+                            <div class="pull-right">
+                                <button id="fsubmit" type="button" class="btn btn-wknd">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="#{myConfig.asset_url}/assets/js/views/event_form.js?v=#{myConfig.asset_version}"></script>

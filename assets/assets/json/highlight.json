@@ -1,0 +1,10 @@
+{
+	"another_data": "test",
+	"highlight_data": {
+		"category": 3,
+		"title": 3,
+		"start_date": "19/07/2017 05:20", 
+		"end_date": "19/08/2017 05:20", 
+		"image": "/assets/images/img/dummy.png"
+	}
+}

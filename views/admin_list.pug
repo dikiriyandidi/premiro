@@ -1,0 +1,96 @@
+extends layout
+
+block content
+    style().
+        .js-pass-list > li[data-passed="true"],.js-pass-list > li{
+            display:none
+        }
+        .js-pass-list > li[data-passed="false"]{
+            display:list-item;
+            color:red
+        }
+        .isNotValid{
+            color:red
+        }
+
+    <ol class="breadcrumb">
+        <li>Main Navigation</li>
+        <li>Settings</li>
+        <li>Admin List</li>
+    </ol>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="panel panel-wknd">
+                    <div class="panel-body">
+                        <div class="table-responsive">
+                            <table id="admin_list_datatable" class="table table-striped table-hover datatable_act">
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade formModal" id="formModal" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" data-title="Admin"></h4>
+                </div>
+                <form id="form_admin_list" action="/cms/setting/admin_list/add_edit" redir-url="/admin_list" class="ajax" done="afterSubmit(response)" autocomplete="off" method="post">
+                    <input type="hidden" id="admin_id" name="admin_id" value="0" >
+                    <input type="hidden" id="wknd_csrf" name="#{csrf_token_name}" value="#{csrf_token}" />
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="role" class="control-label">Role</label>
+                            <div>
+                                <select name="role" class="form-control" id="role" style="width:100%">
+                                    <option value="">Please Select</option>
+                                    for i in roles
+                                        <option value="#{i.id}">#{i.name}</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="control-label">Email</label>
+                            <input type="text" name="email" class="form-control" id="email">
+                            div(class="js-email-validation hidden")
+                        </div>
+                        <div class="form-group">
+                            <label for="fullname" class="control-label">Full Name</label>
+                            <input type="text" name="fullname" class="form-control" id="fullname">
+                            div(class="js-name-validation hidden")
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="control-label">Password</label>
+                            <input type="password" name="password" class="form-control js-pass-ref" id="password">
+                            <ul class="form__pass-req js-pass-list">Password harus mengandung setidaknya
+                                <li>8 - 30 karakter</li>
+                                <li>1 angka (0 - 9)</li>
+                                <li>1 karakter uppercase (A - Z) dan 1 karakter lowercase (a - z)</li>
+                                <li>1 karakter spesial (contoh *, #, &amp;, dsb)</li>
+                            </ul>
+                        </div>
+                        <div class="form-group">
+                            <label for="role" class="control-label">Status</label>
+                            <div>
+                                <select name="status" type="text" class="form-control" id="status" style="width:100%">
+                                    <option value="Active">Active</option>
+                                    <option value="Inactive">Inactive</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-wknd" id="fsubmit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="#{myConfig.asset_url}/assets/js/views/admin_list.js?v=#{myConfig.asset_version}"></script>

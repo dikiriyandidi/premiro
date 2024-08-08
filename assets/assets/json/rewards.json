@@ -1,0 +1,65 @@
+{
+	"main_rewards": {
+		"name": "Main Rewards!", 
+		"description": "Description of Main Rewards goes here.."
+	}, 
+	"rewards_detail": {
+		"name": "Rewards 1", 
+		"description": "Description of Rewards 1", 
+		"voucher_type": "Voucher Type A", 
+		"redeem_type": "Redeem Type Z", 
+		"tnc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non vehicula risus. In eget sem auctor, consectetur justo a, molestie metus. Mauris auctor ornare vulputate. Fusce ut congue lacus, in mollis lacus. Nullam sit amet pharetra magna. Maecenas gravida urna et lobortis pellentesque. Etiam ut metus dolor. Nam sollicitudin leo vitae felis ornare, eget tincidunt mauris condimentum. Sed facilisis nulla at lacus ultrices porttitor. Suspendisse mattis lorem sit amet ligula vestibulum egestas. Vestibulum sem lacus, euismod vitae consequat et, dictum eu ante.", 
+		"point": 15, 
+		"price": "IDR 150.000", 
+		"batch_id": "45678943210", 
+		"quota": "999", 
+		"start_date": "20 Januari 2017 10:00", 
+		"end_date": "20 Januari 2018 23:59", 
+		"status": {
+			"text": "Publish", 
+			"code": 1
+		}
+	}, 
+	"data": [
+		{
+			"id": 1,
+			"name": "Voucher Rp 100.000,-"
+		}, 
+		{
+			"id": 2,
+			"name": "Voucher Rp 200.000,-"
+		}, 
+		{
+			"id": 3,
+			"name": "Buy 1 Get 1"
+		}, 
+		{
+			"id": 4,
+			"name": "Buy 3 Get 2"
+		}, 
+		{
+			"id": 5,
+			"name": "Free Voucher Rp. 100.000 from Boga Group"
+		}, 
+		{
+			"id": 6,
+			"name": "Free 1 Regular Cup Black Sakura from Sour Sally"
+		}, 
+		{
+			"id": 7,
+			"name": "Free 1 Regular Ice Blended Variant from The Coffee Bean & Tea Leaf"
+		}, 
+		{
+			"id": 8,
+			"name": "GRATIS i-Kupon Gift Voucher Indomaret Rp. 10.000"
+		}, 
+		{
+			"id": 9,
+			"name": "GRATIS 1 e-Voucher Nonton dari CGV Cinemas"
+		}, 
+		{
+			"id": 10,
+			"name": "Voucher Pulsa Senilai Rp. 25.000"
+		}
+	]
+}

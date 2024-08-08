@@ -1,0 +1,430 @@
+/* ==========================================================================
+   Main styles
+   ========================================================================== */
+
+// Menu
+.sidebar .nav > li.active, .sidebar .nav > li.open, .sidebar .nav > li.active > a, .sidebar .nav > li.open > a, .sidebar .nav > li.active .nav, .sidebar .nav > li.open .nav {
+  background-color: transparent;
+  color: #f58927;
+}
+
+.sidebar .nav > li.active > a > em, .sidebar .nav > li.open > a > em {
+  color: #f58927;
+}
+
+.sidebar .nav > li.active {
+  border-left-color: #f58927;
+}
+
+.sidebar .nav > li > a {
+  position: relative;
+}
+
+.sidebar .nav > li > a[data-toggle=collapse] {
+  &:after {
+    content: "\f104";
+    font-family: FontAwesome;
+    display: inline;
+    height: auto;
+    float: right;
+    font-size: 16px;
+    font-weight: 300;
+    text-shadow: none;
+    -webkit-transition: all 0.12s ease;
+    transition: all 0.12s ease;
+    transform: rotate(-90deg);
+    margin-top: -2px;
+  }
+  &.collapsed {
+    &:after {
+      transform: rotate(0deg);
+    }
+  }
+}
+
+.aside-collapsed-text {
+  .sidebar .nav > li > a[data-toggle=collapse] {
+    &:after {
+      opacity: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .sidebar:not(.show-scrollbar) {
+    margin-right: 0;
+  }
+}
+
+// Sub Menu
+.list-group-item.active,
+.list-group-item.active:hover,
+.list-group-item.active:focus {
+  background-color: #f58927;
+  border-color: #f58927;
+}
+
+.overlayall {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #160144;
+  z-index: 1059;
+}
+
+// Spinner
+.loading {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 100vw;
+  background: transparent;
+  z-index: 1060;
+}
+
+.ball-beat {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  > div {
+    background-color: #f58927 !important;
+  }
+}
+
+// Datatables
+.dataTables_wrapper .toolbar {
+  margin-bottom: 15px;
+}
+
+.datatable_act tbody > tr > td {
+  a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    &:hover {
+      color: #d94800;
+    }
+  }
+  .click-area {
+    color: #d94800;
+  }
+}
+
+.table > tbody > tr > td > .media {
+  height: 50px;
+  width: 100%;
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+table.table thead th.sorting:after, table.table thead th.sorting_asc:after, table.table thead th.sorting_desc:after {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+// Dropdown
+.dropdown-menu-r {
+  left: auto;
+  right: 0;
+}
+
+// Panel
+.panel-heading > .label.pull-right {
+  margin: -1px;
+  padding: .5em .7em .4em;
+}
+
+.panel-map {
+  height: 200px;
+  width: 100%;
+}
+
+.panel-wknd {
+  border: 0;
+}
+
+.panel-wknd > .panel-heading {
+  color: #fff;
+  // background-color: #f58927;
+  border-color: #f58927;
+  background-color: none;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f58927+0,d84700+100 */
+  background: rgb(245,137,39); /* Old browsers */
+  background: -moz-linear-gradient(left, rgba(245,137,39,1) 0%, rgba(216,71,0,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(245,137,39,1) 0%,rgba(216,71,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(245,137,39,1) 0%,rgba(216,71,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f58927', endColorstr='#d84700',GradientType=1 ); /* IE6-9 */
+}
+
+// Modal
+.modal {
+  z-index: 1050;
+}
+// Hack
+.modal + .modal {
+  z-index: 1051;
+}
+// Hack
+.modal-backdrop + .modal-backdrop {
+  z-index: 1050;
+}
+
+.btn-add-input, .btn-remove-input {
+  margin-left: 10px;
+}
+
+// Select2
+.select2-container--default .select2-selection--multiple, 
+.select2-container--default .select2-selection--single, 
+.select2-dropdown {
+  border: 1px solid #dde6e9;
+}
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+  border: 1px solid #66afe9;
+}
+.form-control + .select2 .select2-selection--single {
+  height: 35px;
+  .select2-selection__rendered {
+    line-height: 35px;
+  }
+  .select2-selection__arrow {
+    height: 35px;
+  }
+}
+.select2-container .select2-selection--single .select2-selection__rendered {
+  padding-left: 16px;
+  padding-right: 28px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+  margin-left: -12px;
+}
+.select2-container {
+  display: block;
+}
+
+// Navbar
+
+.topnavbar .nav-wrapper, .sidebar {
+  background-color: #160144;
+  background-image: none;
+}
+
+.topnavbar .navbar-nav > li > a:hover, .topnavbar .navbar-nav > .open > a:hover, .topnavbar .navbar-nav > li > a:focus, .topnavbar .navbar-nav > .open > a:focus, 
+.sidebar .nav > li > a:focus, .sidebar .nav > li > .nav-item:focus, .sidebar .nav > li > a:hover, .sidebar .nav > li > .nav-item:hover {
+  color: #f58927;
+}
+
+.brand-logo > img {
+  height: 35px;
+}
+
+.brand-logo-collapsed > img {
+  height: 35px;
+}
+
+.sidebar-subnav {
+  background: none;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d84700+0,160144+100&0.25+0,1+100 */
+  background: -moz-linear-gradient(45deg, rgba(216,71,0,0.25) 0%, rgba(22,1,68,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, rgba(216,71,0,0.25) 0%,rgba(22,1,68,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, rgba(216,71,0,0.25) 0%,rgba(22,1,68,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40d84700', endColorstr='#160144',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  &.nav-floating {
+    background: #0b003e;
+  }
+}
+
+.sidebar-subnav > li > a:focus, .sidebar-subnav > li > .nav-item:focus, .sidebar-subnav > li > a:hover, .sidebar-subnav > li > .nav-item:hover {
+  color: #f58927;
+}
+
+ul.ul-clean {
+  padding: 0;
+  padding-left: 16px;
+  margin: 0;
+}
+
+// Breadcrumb
+.breadcrumb {
+  background-color: #ffffff;
+  color: #666666;
+  > li {
+    > a {
+      color: #f58927;
+      text-decoration: none;
+      &:hover {
+        color: #d94800;
+      }
+    }
+  }
+}
+
+.breadcrumb > li + li:before {
+  color: #cccccc;
+}
+
+.breadcrumb__back {
+  float: right;
+  &:before {
+    display: none;
+  }
+}
+
+// Pagination
+.pagination > li > a, .pagination > li > span {
+  color: #f58927;
+  &:hover, &:focus {
+    background-color: #f58927;
+    border-color: #f58927;
+    color: #ffffff;
+  }
+}
+
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+  background-color: #f58927;
+  border-color: #f58927;
+}
+
+.point2rp {
+  font-size: 18px;
+  font-weight: bold;
+  .input-group .btn {
+    font-size: 18px;
+    font-weight: bold;
+    color: #656565;
+  }
+  .form-control {
+    color: #656565;
+  }
+}
+
+.icon-text-l {
+  margin-right: 6px !important;
+}
+
+.icon-text-r {
+  margin-left: 6px !important;
+}
+
+.panel > .list-group .list-group-item {
+  padding: 10px 15px;
+}
+
+.img-cover {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.interest-list {
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+  > li {
+    font-size: 14px;
+    color: #ffffff;
+    display: inline-block;
+    text-align: center;
+    background-size: initial;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 33px;
+    line-height: 33px;
+    width: 130px;
+    border: none;
+    border-radius: 17px;
+    margin-bottom: 16px;
+    margin-right: 16px;
+  }
+}
+
+// Table User Access
+table.table-checkbox {
+  tbody {
+    tr {
+      cursor: pointer;
+      &.active {
+        > td.menu {
+          &:after {
+            content: "\f058";
+            float: right;
+            display: block;
+            font-family: FontAwesome;
+            font-size: 16px;
+            color: #f58927;
+          }
+        }
+      }
+      &.child {
+        td {
+          &.menu {
+            padding-left: 28px;
+          }
+        }
+      }
+      &.grand-child {
+        td {
+          &.menu {
+            padding-left: 48px;
+          }
+        }
+      }
+      td {
+        height: 50px;
+        .btn-mouseover {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.image-list {
+  > div {
+    display: block;
+    float: left;
+    padding: 5px;
+  }
+  .image-item {
+    display: block;
+  }
+}
+
+.fh-inside {
+  position: relative;
+  height: calc(100vh - 155px);
+}
+
+.welcome {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  .txt1 {
+    font-size: 14px;
+    line-height: 1;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 100;
+    letter-spacing: 0.4em;
+    margin-bottom: 2px;
+  }
+  .txt2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.04em;
+  }
+}

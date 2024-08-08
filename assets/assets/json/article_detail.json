@@ -1,0 +1,21 @@
+{
+	"input_from": "Master",
+	"title": "Bersenang-senang Di DWP 2017", 
+	"description": "<font size=\"5\">This</font> is the long long <b>description</b>. <font size=\"5\">This</font> is the long long <b>description</b>. <font size=\"5\">This</font> is the long long <b>description</b>. <font size=\"5\">This</font> is the long long <b>description</b>", 
+	"image": "/assets/images/img/dummy.png", 
+	"start_date": "20/07/2017 06:00",
+	"end_date": "20/07/2017 08:00",
+	"updated_by": "Mimin", 
+	"updated_date": "17 Juni 2017 09:00", 
+	"created_by": "Admin", 
+	"created_date": "13 Juni 2017 10:00", 
+	"total_likes": 1238, 
+	"total_checkin": 29830, 
+	"total_attend": 4785, 
+	"total_point": 20000, 
+	"initiate_point": 6600, 
+	"map": {
+		"lat": "-6.240656", 
+		"lon": "106.787884"
+	}
+}

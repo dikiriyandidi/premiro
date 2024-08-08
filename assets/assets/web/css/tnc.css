@@ -1,0 +1,38 @@
+.tnc__desc {
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Rubik", sans-serif !important;
+  font-size: 15px;
+  line-height: 20px;
+  color: #333333;
+  overflow: hidden;
+}
+
+.tnc__title {
+  display: block;
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  line-height: normal;
+  color: #0b003e;
+  text-transform: uppercase;
+  margin-bottom: 19px;
+}
+
+.tnc__desc font[size="3"] {
+  font-family: "Rubik", sans-serif !important;
+  font-size: 15px;
+  line-height: 20px;
+  color: #333333;
+}
+
+.tnc__desc b, .tnc__desc strong {
+  display: inline-block;
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 15px;
+  font-weight: 700;
+  color: #0b003e;
+  margin-bottom: 16.5px;
+}

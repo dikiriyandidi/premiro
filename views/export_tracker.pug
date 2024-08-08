@@ -1,0 +1,47 @@
+extends layout
+
+block content
+    <ol class="breadcrumb">
+        <li>Main Navigation</li>
+        <li>Moderation</li>
+        <li>Export to CSV</li>
+    </ol>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="panel panel-wknd">
+                    <div class="panel-body">
+                        <div class="modal-body">
+                                <input type="hidden" id="umild_csrf" name="#{csrf_token_name}" value="#{csrf_token}" />
+                                <div class="form-group">
+                                    <label for="tracker_name" class="control-label">Tracker name</label>
+                                    //- <input type="text" name="tracker_name" class="form-control" id="tracker_name">
+                                    <div>
+                                        <select name="tracker_name" class="form-control" id="tracker_name" style="width:100%">
+                                            <option value="">Please Select</option>
+                                            for i in data
+                                                <option value="#{i.tracker_name}">#{i.tracker_name}</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="startdate" class="control-label">Start Date</label>
+                                    <input type="text" name="startdate" class="form-control datetimepicker" id="startdate">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="enddate" class="control-label">End Date</label>
+                                    <input type="text" name="enddate" class="form-control datetimepicker" id="enddate">
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="submit" class="btn btn-umild" id="fsubmit">Submit</button>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="#{myConfig.asset_url}/assets/js/views/export_tracker.js?v=#{myConfig.asset_version}"></script>

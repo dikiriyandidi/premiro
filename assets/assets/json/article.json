@@ -1,0 +1,19 @@
+{
+	"another_data": "test",
+	"article_data": {
+		"input_from": 1,
+		"title": "Lorem Ipsum Dolor Sit Amet", 
+		"description": "<font size=\"5\">This</font> is the long long <b>description</b>. <font size=\"5\">This</font> is the long long <b>description</b>. <font size=\"5\">This</font> is the long long <b>description</b>. <font size=\"5\">This</font> is the long long <b>description</b>", 
+		"content_detail": "<font size=\"5\">This</font> is the long long <b>detail</b>. <font size=\"5\">This</font> is the long long <b>detail</b>. <font size=\"5\">This</font> is the long long <b>detail</b>. <font size=\"5\">This</font> is the long long <b>detail</b>", 
+		"content_footer": "<font size=\"5\">This</font> is the long long <b>footer</b>. <font size=\"5\">This</font> is the long long <b>footer</b>. <font size=\"5\">This</font> is the long long <b>footer</b>. <font size=\"5\">This</font> is the long long <b>footer</b>", 
+		"start_date": "20/07/2017 06:00",
+		"end_date": "20/07/2017 08:00",
+		"lat": 123, 
+		"lon": 321,
+		"location_name": "Senayan City",
+		"location_address": "Address of Senayan City", 
+		"main_rewards": "2,4",
+		"rewards": "1,3", 
+		"image": "/assets/images/img/dummy.png"
+	}
+}

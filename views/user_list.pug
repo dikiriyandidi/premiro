@@ -1,0 +1,29 @@
+extends layout
+
+block content
+    <div class="content-heading">
+        <!-- START Language list-->
+        <div class="pull-right">
+            <div class="btn-group">
+                <button type="button" data-toggle="dropdown" class="btn btn-default">English</button>
+                <ul role="menu" class="dropdown-menu dropdown-menu-right animated fadeInUpShort">
+                <li><a href="#" data-set-lang="en">English</a>
+                </li>
+                <li><a href="#" data-set-lang="es">Spanish</a>
+                </li>
+                </ul>
+            </div>
+        </div><!-- END Language list    -->Dashboard
+        <small data-localize="dashboard.WELCOME"></small>
+        <span>#{user}</span>
+    </div>
+    <!-- START widgets box-->
+    <div class="row">
+        <form action="/cms/user/post" method="post" id="formSubmit" class="ajax">
+            <input type="hidden" name="#{csrf_token_name}" value="#{csrf_token}" />
+            <button id="btn">Test</button>
+        </form>
+        <script src="#{myConfig.asset_url}/assets/js/views/user_list.js?v=#{myConfig.asset_version}"></script>
+            
+    </div>
+    

@@ -1,0 +1,55 @@
+extends layout_landing
+block content_web
+
+    <main class="text-light">
+        <div class="bg">
+            <div class="bg--1"></div>
+            <div class="bg--2"></div>
+
+            <!-- Header -->
+            <header class="header-landing">
+            <div class="header__logo">
+                <img src="#{myConfig.asset_url}/assets/img/Logo-wknd-white.svg">
+            </div>
+            <div class="header__nav">
+                //- <ul>
+                //- <li><a href="/web/">Features</a></li>
+                //- <li><a href="/web/">Notify Me</a></li>
+                //- </ul>
+            </div>
+            </header>
+
+            <section class="fzf">
+            <div class="fzf__content">
+                <div class="fzf__title">404</div>
+                <div class="fzf__subtitle">Link is not available.<br/>Maybe try in another dimension?</div>
+            </div>
+            <div class="fzf__img--1">
+                <div class="img--1__w">
+                <div class="img--1__img"></div>
+                </div>
+            </div>
+            <div class="fzf__img--2">
+                <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 340 328"><defs><style>.cls-1 { filter: url(#drop-shadow-1); fill-rule: evenodd; }</style><filter id="drop-shadow-1" filterUnits="userSpaceOnUse"><feOffset dy="20" in="SourceAlpha"/><feGaussianBlur stdDeviation="7.071" result="dropBlur"/><feFlood flood-color="#333" flood-opacity=".35"/><feComposite operator="in" in2="dropBlur" result="dropShadowComp"/><feComposite in="SourceGraphic" result="shadowed"/></filter></defs><path d="M201.974 52.054l-96.879 13.275c-7.52 1.042-13.873 6.052-16.618 13.105l-35.198 90.887c-2.702 6.959-1.452 14.924 3.267 20.861l61.852 77.831c4.718 5.936 12.184 8.94 19.632 7.954l96.879-13.274c7.522-1.043 13.873-6.053 16.618-13.105l35.199-90.887c2.702-6.959 1.452-14.925-3.266-20.861l-61.853-77.831c-4.719-5.937-12.185-8.941-19.633-7.955z" class="cls-1 hexagon"/></svg>
+            </div>
+            <div class="fzf__img--3">
+                <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 340 328"><defs><style>.cls-1 { filter: url(#drop-shadow-1); fill-rule: evenodd; }</style><filter id="drop-shadow-1" filterUnits="userSpaceOnUse"><feOffset dy="20" in="SourceAlpha"/><feGaussianBlur stdDeviation="7.071" result="dropBlur"/><feFlood flood-color="#333" flood-opacity=".35"/><feComposite operator="in" in2="dropBlur" result="dropShadowComp"/><feComposite in="SourceGraphic" result="shadowed"/></filter></defs><path d="M201.974 52.054l-96.879 13.275c-7.52 1.042-13.873 6.052-16.618 13.105l-35.198 90.887c-2.702 6.959-1.452 14.924 3.267 20.861l61.852 77.831c4.718 5.936 12.184 8.94 19.632 7.954l96.879-13.274c7.522-1.043 13.873-6.053 16.618-13.105l35.199-90.887c2.702-6.959 1.452-14.925-3.266-20.861l-61.853-77.831c-4.719-5.937-12.185-8.941-19.633-7.955z" class="cls-1 hexagon"/></svg>
+            </div>
+            <div class="fzf__img--4">
+                <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 340 328"><defs><style>.cls-1 { filter: url(#drop-shadow-1); fill-rule: evenodd; }</style><filter id="drop-shadow-1" filterUnits="userSpaceOnUse"><feOffset dy="20" in="SourceAlpha"/><feGaussianBlur stdDeviation="7.071" result="dropBlur"/><feFlood flood-color="#333" flood-opacity=".35"/><feComposite operator="in" in2="dropBlur" result="dropShadowComp"/><feComposite in="SourceGraphic" result="shadowed"/></filter></defs><path d="M201.974 52.054l-96.879 13.275c-7.52 1.042-13.873 6.052-16.618 13.105l-35.198 90.887c-2.702 6.959-1.452 14.924 3.267 20.861l61.852 77.831c4.718 5.936 12.184 8.94 19.632 7.954l96.879-13.274c7.522-1.043 13.873-6.053 16.618-13.105l35.199-90.887c2.702-6.959 1.452-14.925-3.266-20.861l-61.853-77.831c-4.719-5.937-12.185-8.941-19.633-7.955z" class="cls-1 hexagon"/></svg>
+            </div>
+            </section>
+
+            <!-- Footer -->
+            <div class="footer landing">
+                <div class="footer__nav">
+                    //- <ul>
+                    //- <li><a href="/web/faq">FAQ & Help</a></li>
+                    //- <li><a href="/web/tnc">Terms & Conditions</a></li>
+                    //- <li><a href="/web/contact">Contact Us</a></li>
+                    //- </ul>
+                </div>
+                <div class="footer__copy">&copy; #{new Date().getFullYear()} #{myConfig.company_name}. All rights reserved.</div>
+            </div>
+        </div>
+    </main>

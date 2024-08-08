@@ -1,0 +1,81 @@
+extends layout
+
+block content
+    <ol class="breadcrumb">
+        <li>Main Navigation</li>
+        <li>Voucher</li>
+        <li class="breadcrumb__back"><a href="/cms/voucher">Go Back</a></li>
+    </ol>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-wknd">
+                    <div class="panel-body">
+                        <form id="form_voucher" class="ajax parsley-validate" action="/cms/voucher/create" redir-url="/cms/voucher">
+                            <input type="hidden" id="wknd_csrf" name="#{csrf_token_name}" value="#{csrf_token}" />
+                            <div class="form-group">
+                                <label for="name" class="control-label">Voucher Name</label>
+                                <input type="text" name="name" class="form-control" id="name" value="">
+                            </div>
+                            <div class="form-group">
+                                <label for="type" class="control-label">Voucher Type</label>
+                                <select name="type" type="text" class="form-control" id="type" style="width:100%">
+                                    <option value="Percentage">Percentage</option>
+                                    <option value="Nominal">Nominal</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="type_value" class="control-label">Type Value</label>
+                                <input type="type_value" name="type_value" class="form-control" id="type_value" value="">
+                            </div>
+                            <div class="form-group">
+                                <label for="quota" class="control-label">Quota</label>
+                                <input type="text" name="quota" class="form-control" id="quota" value="">
+                            </div>
+                            <div class="form-group">
+                                <label for="custom_code" class="control-label">Custom Code</label>
+                                <div>
+                                    <select name="custom_code" type="text" class="form-control" id="custom_code" style="width:100%">
+                                        <option value="No">No</option>
+                                        <option value="Yes">Yes</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group general-code">
+                                <label for="general_code" class="control-label">General Code</label>
+                                <div>
+                                    <input type="text" name="general_code" class="form-control" id="general_code" value="">
+                                </div>
+                            </div>                        
+                            <div class="form-group">
+                                <label for="start_date" class="control-label">Start Date</label>
+                                <input type="text" name="start_date" class="form-control datetimepicker" id="start_date" value="">
+                            </div>
+                            <div class="form-group">
+                                <label for="end_date" class="control-label">End Date</label>
+                                <input type="text" name="end_date" class="form-control datetimepicker" id="end_date" value="">
+                            </div>
+                            <div class="form-group">
+                                <label for="role" class="control-label">Status</label>
+                                <div>
+                                    <select name="status" type="text" class="form-control" id="status" style="width:100%">
+                                        <option value="Unpublished">Unpublished</option>
+                                        <option value="Published">Published</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="panel-footer">
+                        <div class="clearfix">
+                            <div class="pull-right">
+                                <button id="fsubmit" type="button" class="btn btn-wknd">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="#{myConfig.asset_url}/assets/js/views/voucher_form.js?v=#{myConfig.asset_version}"></script>

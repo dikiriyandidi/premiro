@@ -1,0 +1,44 @@
+{ 
+	"data": [
+		{
+			"id": 1,
+			"type_id": 1,
+			"type": "Type 1",
+			"name": "Challenge 1",
+			"qr_string": "Test Challenge 1",
+			"img": "/assets/images/img/dummy.png"
+		}, 
+		{
+			"id": 2,
+			"type_id": 2,
+			"type": "Type 2",
+			"name": "Challenge 2",
+			"qr_string": "Test Challenge 2",
+			"img": "/assets/images/img/dummy.png"
+		}, 
+		{
+			"id": 3,
+			"type_id": 3,
+			"type": "Type 3",
+			"name": "Challenge 3",
+			"qr_string": "Test Challenge 3",
+			"img": "/assets/images/img/dummy.png"
+		}, 
+		{
+			"id": 4,
+			"type_id": 4,
+			"type": "Type 4",
+			"name": "Challenge 4",
+			"qr_string": "Test Challenge 4",
+			"img": "/assets/images/img/dummy.png"
+		}, 
+		{
+			"id": 5,
+			"type_id": 5,
+			"type": "Type 5",
+			"name": "Challenge 5",
+			"qr_string": "Test Challenge 5",
+			"img": "/assets/images/img/dummy.png"
+		}
+	]
+}

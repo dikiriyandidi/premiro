@@ -1,0 +1,15 @@
+{
+	"outlet_list": {
+		"outlet_name": [
+			{
+				"name": "Outlet A"
+			}, 
+			{
+				"name": "Outlet B"
+			}, 
+			{
+				"name": "Outlet C"
+			}
+		]
+	}
+}

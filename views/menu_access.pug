@@ -1,0 +1,284 @@
+extends layout
+
+block content
+    style().
+        .just-moved{
+            background-color:wheat !important;
+        }
+        ul.js-check-list__name > li{
+            color:#656565;
+        }
+        .js-status-trashed , ul.js-check-list__name > li[data-passed="false"]{
+            color:red
+        }
+        //- .updated{
+        //-     background-color:darkgrey !important;
+        //- }
+    <ol class="breadcrumb">
+        <li>Main Navigation</li>
+        <li>Settings</li>
+        <li><a href="#">Menu Access</a></li>
+    </ol>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="panel">
+                    <div class="panel-heading"><b>Filter</b>
+                        <a href="javascript:void(0);" data-tool="panel-collapse" data-toggle="tooltip" title="Collapse Panel" class="pull-right">
+                            <em class="fa fa-plus"></em>
+                        </a>
+                    </div>
+                    <div class="panel-wrapper collapse">
+                        <div class="panel-body">
+                                <h5>Menu Status<h5>
+                                <button class="btn btn-warning filter__menu-status" value="published">Published</button>
+                                <button class="btn btn-warning filter__menu-status" value="unpublished">Unpublished</button>
+                                <button class="btn btn-warning filter__menu-status" value="all">All</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="panel panel-wknd">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">User Access</h4>
+                    </div>
+                    <div class="panel-body">
+                        <form method="post" action="/cms/setting/user_access" class="ajax" done="afterSubmit(response)" id="form_user_access">
+                            <input type="hidden" name="#{csrf_token_name}" value="#{csrf_token}" />
+                            <input type="hidden" name="home_id" id="home_id" value="0" />
+
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    if _canUserAction('add')
+                                        button(title="Submit",class="btn btn-wknd btn-sm btn-add__menu",type="button",act-url="/cms/setting/menu/managemenu")
+                                            span()
+                                                | Add Menu
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    if _canUserAction('edit')
+                                        button(title="Submit",class="btn btn-wknd btn-sm btn-update__layout-menu",type="button")
+                                            span()
+                                                | Submit Layout Menu
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="table-responsive">
+                                        <table class="table table-hover table-checkbox" id="table_user_access">
+                                            <thead>
+                                                <tr>
+                                                    <th width="5%" class="text-center">Access</th>
+                                                    <th width="30%">Menu</th>
+                                                    <th width="15%">Link</th>
+                                                    <th width="3%">Priority</th>
+                                                    <th width="5%">Status</th>
+                                                    <th width="10%">Icon</th>
+                                                    if _canUserAction('edit')
+                                                        <th width="*">Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                tr(
+                                                    class=`rows menu 
+                                                            root__0 
+                                                            ${ (menus.length>0) ? "has-child" : "" }
+                                                            published activated
+                                                            `
+                                                    data-id="0"
+                                                    data-parent_id="#"
+                                                    data-init_priority="1"
+                                                    title=`Root [published]`
+                                                    data-rootPath="#"
+                                                )
+                                                    td()
+                                                        |#
+                                                    td(colspan="6") 
+                                                        span(class="icon-minus toggle-icon") 
+                                                        | Root
+                                                each menu,i in menus
+                                                    tr(
+                                                        class=`rows menu 
+                                                            ${menu.name.replace(/\s/g,'-').toLowerCase()}__${menu.id} 
+                                                            ${ (menu.dataValues.hasChild>0) ? "has-child" : "" }
+                                                            ${menu.status.toLowerCase()} activated
+                                                            `
+                                                        data-id=menu.id
+                                                        data-parent_id=menu.parent_id
+                                                        data-init_priority=menu.priority
+                                                        title=`${menu.name} [${menu.status}]`
+                                                        data-rootPath=menu.dataValues.rootPath
+                                                        )
+                                                        td() #{menu.id}
+                                                        td() 
+                                                            span(style=`margin-left:${menu.dataValues.deep+10}px`)
+                                                                if(menu.dataValues.hasChild>0)
+                                                                    span(class="icon-minus toggle-icon") 
+                                                                | #{menu.dataValues.treeText.replace(/~/g,"")}
+                                                        td()
+                                                            |#{menu.link}
+                                                        td(class=`priority`)
+                                                            |#{menu.priority}
+                                                        td(class="td-status")
+                                                            |#{menu.status}
+                                                        td(class="td-em_class")
+                                                            if( (menu.em_class==null)==false )
+                                                                |<em class="#{menu.em_class}"></em>&nbsp #{menu.em_class}
+                                                        if _canUserAction('edit')
+                                                            td(class="td-action")
+                                                                button(class="btn btn-default btn-action move-up",type="button",title="Move menu up") 
+                                                                    span(class="icon-arrow-up-circle btn-action-icon")
+                                                                button(class="btn btn-default btn-action move-down",type="button",title="Move menu down") 
+                                                                    span(class="icon-arrow-down-circle btn-action-icon")
+                                                                button(class="btn btn-default btn-action edit",type="button",title="Edit menu",act-url="/cms/setting/menu/managemenu",act-action="Edit") 
+                                                                    span(class="icon-pencil btn-action-icon")
+                                                                input(type="hidden",name=`data[menu][${menu.id}][id]`,value=`${menu.id}`)
+                                                                input(type="hidden",name=`data[menu][${menu.id}][priority]`,value=`${menu.priority}`)
+                                                                input(type="hidden",name=`data[menu][${menu.id}][link]`,value=`${menu.link}`)
+                                                                input(type="hidden",name=`data[menu][${menu.id}][status]`,value=`${menu.status}`)
+                                                                input(type="hidden",name=`data[menu][${menu.id}][em_class]`,value=`${menu.em_class}`)
+                                                                input(type="hidden",name=`data[menu][${menu.id}][parent_id]`,value=`${menu.parent_id}`)
+                                                                input(type="hidden",name=`data[menu][${menu.id}][name]`,value=`${menu.name}`)
+                                                                if(accessLookup[menu.id]==undefined)
+                                                                    input(type="hidden",name=`data[menu][${menu.id}][role_access_value]`,value="0")
+                                                                else
+                                                                    input(type="hidden",name=`data[menu][${menu.id}][role_access_value]`,value="1")
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-xs-12">
+                                    <div class="form-group">&nbsp;</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-6">
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    if _canUserAction('edit')
+                                        button(title="Submit",class="btn btn-wknd btn-sm btn-update__layout-menu",type="button")
+                                            span()
+                                                | Submit Layout Menu
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade formModal" id="formModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" data-title="Menu"></h4>
+                </div>
+                //- content for manage menu
+                <form id="form_role_list" action="" class="ajax" done="afterSubmit(response)">
+                    <input type="hidden" id="id" name="id" >
+                    <input type="hidden" id="#{csrf_token_name}" name="#{csrf_token_name}" value="#{csrf_token}" />
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="role" class="control-label">Parent &nbsp
+                                <a href="javascript:void(0);" data-toggle="tooltip" title="Single tilde (~) : first child, &nbsp &nbsp Double tilde (~~) : second child" class="pull-right">
+                                    <span class="label label-info">
+                                        <em class="fa fa-question"></em>
+                                    </span>
+                                </a>
+                            </label>
+                            <div>
+                                <select name="parent_id" type="text" class="form-control" id="parent_id" style="width:100%">
+                                    <option value="">Please Select</option>
+                                    <option value="0">Root</option>
+                                    each menu,i in menus
+                                        option(value=menu.id) #{menu.dataValues.treeText}
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="name" class="control-label">Menu</label>
+                            <input type="text" name="name" class="form-control" id="name">
+                            //- <ul class="js-check-list__name hidden">Name harus mengandung setidaknya
+                            //-     <li>1 karakter uppercase (A - Z) atau 1 karakter lowercase (a - z)</li>
+                            //- </ul>
+                        </div>
+                        <div class="form-group">
+                            <label for="link" class="control-label">Link </label>
+                            <div>
+                            <input type="text" name="link" class="form-control" id="link">
+                            </div>
+                            //- <input type="text" name="link" class="form-control" id="link">
+                        </div>
+                        <div class="form-group">
+                            <label for="icon" class="control-label">Icon</label>
+                            <input type="text" name="em_class" class="form-control" id="icon">
+                            <a href="https://coreui.io/v1/demo/AngularJS_Demo/#!/icons/simple-line-icons" target="_blank"> <span class="label label-info">Simple Line Icons</span></a>
+                        </div>
+                        <div class="form-group">
+                            <label for="role" class="control-label">Status</label>
+                            <div>
+                                <select name="status" type="text" class="form-control" id="status" style="width:100%">
+                                    <option value="Published">Published</option>
+                                    <option value="Unpublished">Unpublished</option>
+                                    //- <option class="js-require___id" value="Trashed">Delete</option>
+                                </select>
+                                <span class="js-status-trashed hidden">Menu will be deleted. This action cannot be undone.<span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="role" class="control-label">Access</label>
+                            <div>
+                                <input type="checkbox" id="access_role">&nbsp
+                                | Grant Access for #{currentRole.name}
+                                input(type="hidden",name="access_role",id="access_role_value",value="0")
+                                input(type="hidden",name="access_role_id",id="access_role_id",value=currentRole.id)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-wknd" id="fsubmit">Submit</button>
+                    </div>
+                </form>
+                //- content for confirm
+                <div class="modal-body js-require__submit-confirm">
+                        <div class="table-responsive">
+                            <table class="table table-hover table-checkbox" id="table_confirm">
+                                <thead>
+                                    <tr>
+                                        <th width="3%" class="text-center">Access</th>
+                                        <th width="45%">Menu</th>
+                                        <th width="15%">Link</th>
+                                        <th width="3%">Init Priority</th>
+                                        <th width="3%">Current Priority</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                        </div>
+                </div>
+                <div class="modal-footer js-require__submit-confirm">
+                    <button type="button" class="btn btn-default" id="btn-submit-cancel__layout" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-wknd" id="btn-submit__layout">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    |let _menuChanges = []
+    |let _unsaved = false
+    </script>
+    <script src="#{myConfig.asset_url}/assets/js/views/menu_access_toggle.js?v=#{myConfig.asset_version}"></script>
+    <script src="#{myConfig.asset_url}/assets/js/views/menu_access.js?v=#{myConfig.asset_version}"></script>
+    <script src="#{myConfig.asset_url}/assets/js/views/menu_access_modal.js?v=#{myConfig.asset_version}"></script>
+    <script src="#{myConfig.asset_url}/assets/js/views/menu_access_confirm.js?v=#{myConfig.asset_version}"></script>

@@ -1,0 +1,20 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+.btn-action {
+  &:not(:last-child) {
+    margin-right: 6px;
+  }
+}
+
+.btn-wknd {
+  background-color: #f58927;
+  border-color: #f58927;
+  color: #ffffff;
+  &:hover, &:focus {
+    background-color: #d94800;
+    border-color: #d94800;
+    color: #ffffff;
+  }
+}

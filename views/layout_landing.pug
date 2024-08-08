@@ -1,0 +1,74 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Weekend!</title>
+    <meta name="description" content="Nec dubitamus multa iter quae et nos invenerat.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    if(og == undefined)
+      <meta property="og:url" content="#{myConfig.base_url}" />
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content="Weekend!" />
+      <meta property="og:description" content="Description Weekend!" />
+      <meta property="og:image" content="#{myConfig.base_url}/assets/web/images/icon/Header-Logo-Horizontal.svg" />
+    <!-- Favicon -->
+    <link rel="icon" href="#{myConfig.asset_url}/images/favicon/favicon.ico"/>
+
+    <!-- Configure the font used -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,500" rel="stylesheet">
+
+    <!-- Core -->
+    <link rel="stylesheet" href="#{myConfig.asset_url}/assets/web/css/style.css?v=#{myConfig.asset_version}">
+
+    <script src="#{myConfig.asset_url}/assets/web/js/modernizr-3.6.0.min.js?v=#{myConfig.asset_version}"></script>
+    <script src="#{myConfig.asset_url}/assets/web/js/fontfaceobserver.min.js?v=#{myConfig.asset_version}"></script>
+    <script src="#{myConfig.asset_url}/assets/web/js/plugins.js?v=#{myConfig.asset_version}"></script>
+    <script src="#{myConfig.asset_url}/assets/web/js/functions.js?v=#{myConfig.asset_version}"></script>
+    <script src="#{myConfig.asset_url}/assets/web/js/initiate_font.js?v=#{myConfig.asset_version}"></script>
+      
+  </head>
+  <body>
+    <!--[if lt IE 8]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Main Content -->
+    <main class="text-light">
+      <div class="bg">
+
+        block content_web
+      
+      </div>
+    </main>
+
+
+    <div id="ajaxModal" class="modal">
+      <div class="modal-item">
+        <div class="close"></div>
+        <div class="modal-wrapper">
+          <div class="modal-title"></div>
+          <div class="modal-scrollable">
+            <div class="modal-content"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="overlayall"></div>
+
+    <div class="loading">
+      <div class="coloading">
+        <div></div>
+      </div>
+    </div>
+
+    <script src="#{myConfig.asset_url}/assets/web/js/functional.js?v=#{myConfig.asset_version}"></script>
+    <script src="#{myConfig.asset_url}/assets/web/js/main.js?v=#{myConfig.asset_version}"></script>
+
+    <script src="#{myConfig.asset_url}/assets/web/js/global.js?v=#{myConfig.asset_version}"></script>
+    <script src="#{myConfig.asset_url}/assets/web/js/ga.js?v=#{myConfig.asset_version}"></script>
+  </body>
+</html>

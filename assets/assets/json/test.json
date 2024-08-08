@@ -1,0 +1,48 @@
+{
+	"api_version": "0.0.1",
+  "memory_usage": "4.79 MB",
+  "elapse_time": "0.28",
+	"number": 200,
+  "lang": "en",
+  "error": {},
+  "data": [
+    {
+      "id": 1,
+      "name": "initiate_point",
+      "value": 1000,
+      "created_date": "2017-07-21T06:48:10.000Z",
+      "updated_date": "2017-07-21T06:48:10.000Z"
+    },
+    {
+      "id": 2,
+      "name": "add_point_per_view",
+      "value": 5,
+      "created_date": "2017-07-05T07:02:32.000Z",
+      "updated_date": "0000-00-00 00:00:00"
+    },
+    {
+      "id": 3,
+      "name": "add_point_per_like",
+      "value": 100,
+      "created_date": "2017-07-05T07:02:45.000Z",
+      "updated_date": "0000-00-00 00:00:00"
+    },
+    {
+      "id": 4,
+      "name": "reduce_point_per_day",
+      "value": 5,
+      "created_date": "2017-07-05T07:24:32.000Z",
+      "updated_date": "0000-00-00 00:00:00"
+    }
+  ], 
+ "event_data": [
+    {
+      "value": 1,
+      "text": "[ event ] - Lingard Berharap Bisa Main Bareng Griezmann"
+    },
+    {
+      "value": 2,
+      "text": "[ venue ] - Lacazette"
+    }
+ ]
+}

@@ -1,0 +1,1 @@
+functions.push(function(){$(".faqTitle").each(function() {var faqTitle = $(this).text();$(this).html(faqTitle);});$(".faqQuestion").each(function() {var faqQuestion = $(this).text();$(this).html(faqQuestion);});$(".faqAnswer").each(function() {var faqAnswer = $(this).text();$(this).html(faqAnswer);})});

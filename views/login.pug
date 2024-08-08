@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link href="#{myConfig.asset_url}/assets/img/logo_weekend.jpg" rel="shortcut icon">
+
+        <link rel="stylesheet" href="#{myConfig.asset_url}/assets/css/style.css?v=#{myConfig.asset_version}">
+        <!--<script src="/assets/js/vendor/modernizr-3.6.0.min.js"></script>-->
+        <script src="#{myConfig.asset_url}/assets/js/initiate.js?v=#{myConfig.asset_version}"></script>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    </head>
+
+    <body>
+       
+
+        <div class="overlayall"></div>
+
+        <div class="loading">
+            <div class="ball-beat">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="block-center mt-xl wd-xl">
+            <!-- START panel-->
+                <div class="panel panel-dark panel-flat">
+                    <div class="panel-heading text-center">
+                        <a href="/cms/login">
+                            <img src="#{myConfig.asset_url}/assets/img/Logo-wknd-white.svg" alt="wknd" class="block-center img-rounded" width="50%">
+                        </a>
+                    </div>
+                    <div class="panel-body">
+                        <p class="text-center pv">SIGN IN TO CONTINUE.</p>
+                        <form role="form" class="mb-lg ajax parsley-validate" method="post" action="/cms/login/" done="afterLogin(response)" id="formLogin" error="errorLogin(response)" >
+                            <input type="hidden" name="#{csrf_token_name}" value="#{csrf_token}" />
+                            <div class="form-group has-feedback">
+                                <input id="email" type="email" name="email" placeholder="Enter email" autocomplete="off" required data-parsley-type="email" class="form-control">
+                                <span class="fa fa-envelope form-control-feedback text-muted"></span>
+                            </div>
+                            <div class="form-group has-feedback">
+                                <input id="password" type="password" name="password" placeholder="Password" required class="form-control">
+                                <span class="fa fa-lock form-control-feedback text-muted"></span>
+                            </div>
+                            if !myConfig.recaptcha
+                                //- turn off google recaptha
+                                <button type="submit" class="btn btn-block btn-primary mt-lg" data-callback="submitForm">Login</button>
+                            else    
+                                //- turn on google recaptha
+                                <button type="submit" class="btn btn-block btn-primary mt-lg g-recaptcha" data-sitekey="#{myConfig.sitekey}" data-callback="submitForm">Login</button>
+                        </form>
+                    </div>
+                </div>
+            <!-- END panel-->
+                <div class="p-lg text-center">
+                    <span>&copy;</span>
+                    <span>#{new Date().getFullYear()}</span>
+                    <span>-</span>
+                    <span>#{myConfig.company_name}</span>
+                </div>
+            </div>
+        </div>
+
+        <script src="#{myConfig.asset_url}/assets/js/views/login.js?v=#{myConfig.asset_version}"></script>
+        <script src="#{myConfig.asset_url}/assets/js/plugins.js?v=#{myConfig.asset_version}"></script>
+        <script src="#{myConfig.asset_url}/assets/js/app.js?v=#{myConfig.asset_version}"></script>
+        <script src="#{myConfig.asset_url}/assets/js/functional.js?v=#{myConfig.asset_version}"></script>
+        <script src="#{myConfig.asset_url}/assets/js/main.js?v=#{myConfig.asset_version}"></script>
+        <script src="#{myConfig.asset_url}/assets/js/global.js?v=#{myConfig.asset_version}"></script>
+        <script src="https://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+        <script src="#{myConfig.asset_url}/assets/js/ga.js?v=#{myConfig.asset_version}"></script>
+        <style>html { display:none }</style> 
+        script.
+            if (self == top) {
+                document.documentElement.style.display = 'block'; 
+            } else {
+                top.location = self.location; 
+            }
+
+
+        <div class="modal fade" id="confirmModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-width="360">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title text-center">Confirmation</h2>
+                    </div>
+                    <div class="modal-body text-center">
+                        <p id="confirmContent"></p>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <a href="#" class="btn btn-default btn-block btnConfirmCancel">Cancel</a>
+                            </div>
+                            <div class="col-sm-6">
+                                <a href="#" class="btn btn-primary btn-block btnConfirmOk">Ok</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-width="360">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title text-center">Information</h2>
+                    </div>
+                    <div class="modal-body text-center">
+                        <p id="infoContent"></p>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <a href="#" class="btn btn-primary btn-block btnInfoOk">Ok</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="alertModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-width="360">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title text-center">Warning</h2>
+                    </div>
+                    <div class="modal-body text-center">
+                        <p id="alertContent"></p>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <a href="#" class="btn btn-danger btn-block btnAlertOk">Ok</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,168 @@
+extends layout
+
+block content
+    <ol class="breadcrumb">
+        <li>Main Navigation</li>
+        <li>Settings</li>
+        <li><a href="#">User Access</a></li>
+    </ol>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="panel panel-wknd">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">User Access</h4>
+                    </div>
+                    <div class="panel-body">
+                        <form method="post" action="/cms/setting/user_access" class="ajax" done="afterSubmit(response)" id="form_user_access">
+                            <input type="hidden" name="#{csrf_token_name}" value="#{csrf_token}" />
+                            <input type="hidden" name="home_id" id="home_id" value="0" />
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <div class="form-group">
+                                        <label for="role" class="control-label">Role</label>
+                                        <select type="text" class="form-control select2" name="role" id="role_selector" style="width:100%">
+                                            <option value="">Please select</option>
+                                            for i in roles
+                                                <option value="#{i.id}">#{i.name}</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-xs-8 text-right">
+                                    button(type="button",class="js-selector-toggle only-single btn btn-default",data-select="single") Single Select
+                                    button(type="button",class="js-selector-toggle include-child btn btn-default btn-wknd" data-select="child") Child Select
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="table-responsive">
+                                        <table class="table table-hover table-checkbox" id="table_user_access">
+                                            <thead>
+                                                <tr>
+                                                    <th width="100px" class="text-center">Access</th>
+                                                    <th width="60%">Menu</th>
+                                                    each row in uacActions
+                                                        th(width="*") #{row.label} 
+                                                    <th width="*">Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                            for m in menus
+                                                <tr class="parent hidden" data-id="#{m.id}">
+                                                    <td>
+                                                        <div class="checkbox c-checkbox">
+                                                            <label>
+                                                                <input type="checkbox" name="menu" class="check_access" value="#{m.id}" />
+                                                                <span class="fa fa-check"></span>
+                                                            </label>
+                                                        </div>
+                                                    </td>
+                                                    <td class="menu">#{m.name}</td>
+                                                    if(m.child == undefined)
+                                                        each row in uacActions
+                                                            td
+                                                                div.checkbox.c-checkbox
+                                                                    label
+                                                                        input(
+                                                                            type="checkbox"
+                                                                            name=`type_${m.id}`
+                                                                            id=`type_${m.id}-${row.value}`
+                                                                            value=row.value
+                                                                            disabled=(row.value == 'view' ? "disabled": false)
+                                                                            )
+                                                                        span.fa.fa-check
+                                                        td
+                                                            button.btn.btn-default.btn_set_home(
+                                                                type="button" data-id=m.id
+                                                                ) Set Homepage
+                                                    else
+                                                        td(colspan=6)
+                                                </tr>
+                                                if(m.child != undefined)
+                                                    for c in m.child
+                                                        <tr class="child hidden" data-id="#{c.id}" data-parentid="#{m.id}">
+                                                            <td>
+                                                                <div class="checkbox c-checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" name="menu" class="check_access" value="#{c.id}" />
+                                                                        <span class="fa fa-check"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </td>
+                                                            <td class="menu">#{c.name}</td>
+                                                            if(c.child == undefined)
+                                                                each row in uacActions
+                                                                    td
+                                                                        div.checkbox.c-checkbox
+                                                                            label
+                                                                                input(
+                                                                                    type="checkbox"
+                                                                                    name=`type_${c.id}`
+                                                                                    id=`type_${c.id}-${row.value}`
+                                                                                    value=row.value
+                                                                                    disabled=(row.value == 'view' ? "disabled": false)
+                                                                                    )
+                                                                                span.fa.fa-check
+                                                                td
+                                                                    button.btn.btn-default.btn_set_home(
+                                                                        type="button" data-id=c.id
+                                                                        ) Set Homepage
+                                                            else
+                                                                td(colspan=6)
+                                                        </tr>
+                                                        if(c.child != undefined)
+                                                            for c2 in c.child
+                                                                <tr class="grand-child hidden" data-id="#{c2.id}" data-parentid="#{c.id}">
+                                                                    <td>
+                                                                        <div class="checkbox c-checkbox">
+                                                                            <label>
+                                                                                <input type="checkbox" name="menu" class="check_access" value="#{c2.id}" />
+                                                                                <span class="fa fa-check"></span>
+                                                                            </label>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="menu">#{c2.name}</td>
+                                                                    if(c2.child == undefined)
+                                                                        each row in uacActions
+                                                                            td
+                                                                                div.checkbox.c-checkbox
+                                                                                    label
+                                                                                        input(
+                                                                                            type="checkbox"
+                                                                                            name=`type_${c2.id}`
+                                                                                            id=`type_${c2.id}-${row.value}`
+                                                                                            value=row.value
+                                                                                            disabled=(row.value == 'view' ? "disabled": false)
+                                                                                            )
+                                                                                        span.fa.fa-check
+                                                                        td
+                                                                            button.btn.btn-default.btn_set_home(
+                                                                                type="button" data-id=c2.id
+                                                                                ) Set Homepage
+                                                                </tr>
+                                            <tr class="js-required__role-selected">
+                                                <td colspan="3" style="font-weight:bold;">
+                                                    | Select role to load menu access
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="form-group">&nbsp;</div>
+                                </div>
+                                <div class="col-xs-12">
+                                    if _canUserAction('edit')
+                                        <div class="form-group">
+                                            <button type="submit" class="btn btn-wknd pull-right" id="fsubmit">Save</button>
+                                        </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="#{myConfig.asset_url}/assets/js/views/user_access.js?v=#{myConfig.asset_version}"></script>
